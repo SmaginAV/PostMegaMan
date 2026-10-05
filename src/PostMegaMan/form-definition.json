@@ -1,0 +1,1546 @@
+{
+  "title": "PostMegaMan",
+  "properties": {
+    "autoTitle": false,
+    "commandBarLocation": "None",
+    "verticalSpacing": "Half"
+  },
+  "events": {
+    "OnOpen": "ПриОткрытии",
+    "OnClose": "ПриЗакрытии",
+    "OnCreateAtServer": "ПриСозданииНаСервере"
+  },
+  "elements": [
+    {
+      "autoCmdBar": "ФормаКоманднаяПанель",
+      "autofill": false
+    },
+    {
+      "group": "alwaysHorizontal",
+      "name": "РабочаяОбласть",
+      "representation": "None",
+      "showTitle": false,
+      "verticalStretch": true,
+      "groupVerticalAlign": "Top",
+      "verticalAlign": "Top",
+      "children": [
+        {
+          "group": "vertical",
+          "name": "ГруппаWorkSpace",
+          "representation": "None",
+          "showTitle": false,
+          "visible": false,
+          "horizontalStretch": false,
+          "children": [
+            {
+              "group": "alwaysHorizontal",
+              "name": "СтрокаПутиWorkSpace",
+              "representation": "None",
+              "showTitle": false,
+              "horizontalStretch": true,
+              "children": [
+                {
+                  "input": "ПутьWorkSpace",
+                  "path": "ПутьWorkSpace",
+                  "title": "Путь к WorkSpace",
+                  "titleLocation": "top",
+                  "width": 20,
+                  "horizontalStretch": true,
+                  "clearButton": true,
+                  "events": {
+                    "OnChange": "ПутьWorkSpaceПриИзменении"
+                  }
+                },
+                {
+                  "button": "ВыбратьКаталогWorkSpace",
+                  "command": "ВыбратьКаталогWorkSpace",
+                  "title": "Выбрать каталог WorkSpace",
+                  "type": "usual",
+                  "picture": "abs:Picture.png",
+                  "loadTransparent": true,
+                  "representation": "Picture",
+                  "tooltip": "Выбрать каталог WorkSpace"
+                },
+                {
+                  "button": "ОбновитьWorkSpace",
+                  "command": "ОбновитьWorkSpace",
+                  "title": "Обновить дерево WorkSpace",
+                  "type": "usual",
+                  "picture": "abs:Picture.png",
+                  "loadTransparent": true,
+                  "representation": "Picture",
+                  "tooltip": "Обновить дерево WorkSpace"
+                }
+              ]
+            },
+            {
+              "table": "ДеревоWorkSpace",
+              "path": "ДеревоWorkSpace",
+              "titleLocation": "none",
+              "readOnly": true,
+              "representation": "Tree",
+              "width": 32,
+              "horizontalStretch": true,
+              "verticalStretch": true,
+              "header": false,
+              "commandBarLocation": "None",
+              "searchStringLocation": "None",
+              "tableAutofill": false,
+              "rowPictureDataPath": "ДеревоWorkSpace.Картинка",
+              "initialTreeView": "ExpandAllLevels",
+              "enableStartDrag": true,
+              "enableDrag": true,
+              "events": {
+                "OnActivateRow": "ДеревоWorkSpaceПриАктивизацииСтроки",
+                "BeforeExpand": "ДеревоWorkSpaceПередРазворачиванием",
+                "DragStart": "ДеревоWorkSpaceНачалоПеретаскивания",
+                "DragCheck": "ДеревоWorkSpaceПроверкаПеретаскивания",
+                "Drag": "ДеревоWorkSpaceПеретаскивание",
+                "DragEnd": "ДеревоWorkSpaceОкончаниеПеретаскивания"
+              },
+              "columns": [
+                {
+                  "input": "ИмяУзлаWorkSpace",
+                  "path": "ДеревоWorkSpace.Имя",
+                  "title": "Запросы",
+                  "width": 30
+                }
+              ]
+            },
+            {
+              "button": "ДобавитьЗапросWorkSpace",
+              "command": "ДобавитьЗапросWorkSpace",
+              "title": "Добавить новый запрос",
+              "type": "usual",
+              "picture": "abs:Picture.png",
+              "loadTransparent": true,
+              "representation": "PictureAndText",
+              "tooltip": "Добавить новый запрос"
+            },
+            {
+              "button": "ДобавитьКаталогWorkSpace",
+              "command": "ДобавитьКаталогWorkSpace",
+              "title": "Добавить новый каталог запросов",
+              "type": "usual",
+              "picture": "abs:Picture.png",
+              "loadTransparent": true,
+              "representation": "PictureAndText",
+              "tooltip": "Добавить новый каталог запросов"
+            },
+            {
+              "button": "УдалитьWorkSpace",
+              "command": "УдалитьWorkSpace",
+              "title": "Удалить",
+              "type": "usual",
+              "picture": "abs:Picture.png",
+              "loadTransparent": true,
+              "representation": "PictureAndText",
+              "tooltip": "Удалить"
+            }
+          ]
+        },
+        {
+          "group": "vertical",
+          "name": "ПраваяОбласть",
+          "representation": "None",
+          "showTitle": false,
+          "horizontalStretch": true,
+          "verticalStretch": true,
+          "groupVerticalAlign": "Top",
+          "verticalAlign": "Top",
+          "verticalSpacing": "Half",
+          "children": [
+            {
+              "group": "alwaysHorizontal",
+              "name": "ГруппаКоманды",
+              "title": "Группа команды",
+              "tooltip": "Группа команды",
+              "representation": "none",
+              "showTitle": false,
+              "children": [
+                {
+                  "button": "Отправить",
+                  "command": "Отправить",
+                  "title": "Отправить",
+                  "picture": "abs:Picture.png",
+                  "loadTransparent": true,
+                  "representation": "PictureAndText",
+                  "type": "usual",
+                  "width": 20,
+                  "height": 1,
+                  "autoMaxWidth": false,
+                  "autoMaxHeight": false,
+                  "defaultButton": true,
+                  "textColor": "style:FieldSelectedTextColor",
+                  "backColor": "web:LightSlateGray"
+                },
+                {
+                  "cmdBar": "КомандыЗапроса",
+                  "title": "Команды запроса",
+                  "tooltip": "Команды запроса",
+                  "children": [
+                    {
+                      "button": "СохранитьВФайл",
+                      "command": "СохранитьВФайл",
+                      "title": "Сохранить в файл",
+                      "type": "commandBar",
+                      "picture": "abs:Picture.png",
+                      "loadTransparent": true,
+                      "representation": "PictureAndText",
+                      "locationInCommandBar": "InCommandBar"
+                    },
+                    {
+                      "button": "ЗагрузитьИзФайла",
+                      "command": "ЗагрузитьИзФайла",
+                      "title": "Загрузить из файла",
+                      "type": "commandBar",
+                      "picture": "abs:Picture.png",
+                      "loadTransparent": true,
+                      "representation": "PictureAndText",
+                      "locationInCommandBar": "InCommandBar"
+                    },
+                    {
+                      "button": "ОчиститьВсе",
+                      "command": "ОчиститьВсе",
+                      "title": "Очистить всё",
+                      "type": "commandBar",
+                      "picture": "abs:Picture.png",
+                      "loadTransparent": true,
+                      "representation": "PictureAndText",
+                      "locationInCommandBar": "InCommandBar"
+                    },
+                    {
+                      "button": "ПереключитьПанельWorkSpace",
+                      "command": "ПереключитьПанельWorkSpace",
+                      "title": "Показать боковую панель",
+                      "type": "commandBar",
+                      "picture": "abs:Picture.png",
+                      "loadTransparent": true,
+                      "representation": "PictureAndText",
+                      "tooltip": "Показать боковую панель",
+                      "locationInCommandBar": "InCommandBar"
+                    },
+                    {
+                      "popup": "ГруппаИмпорт",
+                      "picture": "abs:Picture.png",
+                      "loadTransparent": true,
+                      "representation": "PictureAndText",
+                      "title": "Импорт",
+                      "tooltip": "Группа импорт",
+                      "children": [
+                        {
+                          "button": "ИмпортироватьCURL",
+                          "picture": "abs:Picture.png",
+                          "loadTransparent": true,
+                          "representation": "PictureAndText",
+                          "command": "ИмпортироватьCURL",
+                          "title": "Импортировать из cURL",
+                          "type": "commandBar",
+                          "locationInCommandBar": "InCommandBar"
+                        },
+                        {
+                          "button": "ИмпортироватьPostman",
+                          "picture": "abs:Picture.png",
+                          "loadTransparent": true,
+                          "representation": "PictureAndText",
+                          "command": "ИмпортироватьPostman",
+                          "title": "Импортировать из POSTman",
+                          "type": "commandBar",
+                          "locationInCommandBar": "InCommandBar"
+                        }
+                      ]
+                    },
+                    {
+                      "button": "ОткрытьСправку",
+                      "command": "ОткрытьСправку",
+                      "title": "Как пользоваться",
+                      "type": "commandBar",
+                      "picture": "abs:Picture.png",
+                      "loadTransparent": true,
+                      "representation": "Picture",
+                      "width": 4,
+                      "locationInCommandBar": "InCommandBar"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "vertical",
+              "name": "ОсновнаяОбласть",
+              "representation": "None",
+              "showTitle": false,
+              "horizontalStretch": true,
+              "verticalStretch": true,
+              "groupVerticalAlign": "Top",
+              "verticalAlign": "Top",
+              "children": [
+                {
+                  "group": "alwaysHorizontal",
+                  "name": "СтрокаЗапроса",
+                  "representation": "None",
+                  "showTitle": false,
+                  "verticalStretch": false,
+                  "groupVerticalAlign": "Center",
+                  "children": [
+                    {
+                      "input": "Метод",
+                      "path": "Метод",
+                      "title": "Метод",
+                      "width": 9,
+                      "dropListButton": true,
+                      "choiceList": [
+                        {
+                          "value": "GET",
+                          "presentation": "GET"
+                        },
+                        {
+                          "value": "POST",
+                          "presentation": "POST"
+                        },
+                        {
+                          "value": "PUT",
+                          "presentation": "PUT"
+                        },
+                        {
+                          "value": "PATCH",
+                          "presentation": "PATCH"
+                        },
+                        {
+                          "value": "DELETE",
+                          "presentation": "DELETE"
+                        },
+                        {
+                          "value": "HEAD",
+                          "presentation": "HEAD"
+                        },
+                        {
+                          "value": "OPTIONS",
+                          "presentation": "OPTIONS"
+                        },
+                        {
+                          "value": "TRACE",
+                          "presentation": "TRACE"
+                        },
+                        {
+                          "value": "CONNECT",
+                          "presentation": "CONNECT"
+                        }
+                      ],
+                      "font": {
+                        "bold": true,
+                        "italic": false,
+                        "kind": "StyleItem",
+                        "ref": "style:NormalTextFont",
+                        "scale": 100,
+                        "strikeout": false,
+                        "underline": false
+                      },
+                      "horizontalAlign": "Center",
+                      "horizontalStretch": false,
+                      "events": {
+                        "OnChange": "ПараметрЗапросаПриИзменении"
+                      }
+                    },
+                    {
+                      "input": "КонтекстВыполнения",
+                      "path": "КонтекстВыполнения",
+                      "title": "Контекст",
+                      "titleLocation": "Left",
+                      "width": 11,
+                      "horizontalAlign": "Center",
+                      "font": {
+                        "bold": true,
+                        "italic": false,
+                        "kind": "StyleItem",
+                        "ref": "style:NormalTextFont",
+                        "scale": 100,
+                        "strikeout": false,
+                        "underline": false
+                      },
+                      "horizontalStretch": false,
+                      "visible": false,
+                      "on": [
+                        "OnChange"
+                      ]
+                    },
+                    {
+                      "input": "Адрес",
+                      "path": "АдресДляПоказа",
+                      "events": {
+                        "OnChange": "АдресПриИзменении"
+                      },
+                      "title": "URL",
+                      "horizontalStretch": true,
+                      "autoMaxWidth": false,
+                      "maxWidth": 60
+                    },
+                    {
+                      "input": "ТаймаутСекунд",
+                      "path": "ТаймаутСекунд",
+                      "title": "Таймаут, с",
+                      "width": 8,
+                      "events": {
+                        "OnChange": "ПараметрЗапросаПриИзменении"
+                      }
+                    }
+                  ],
+                  "backColor": "web:WhiteSmoke",
+                  "height": 3,
+                  "horizontalStretch": true,
+                  "verticalAlign": "Center"
+                },
+                {
+                  "pages": "Страницы",
+                  "pagesRepresentation": "TabsOnTop",
+                  "children": [
+                    {
+                      "page": "СтраницаЗапрос",
+                      "title": "Запрос",
+                      "children": [
+                        {
+                          "html": "HTMLТелоЗапроса",
+                          "path": "ТекстРедактораЗапроса",
+                          "title": "Тело запроса",
+                          "titleLocation": "top",
+                          "readOnly": true,
+                          "height": 1,
+                          "autoMaxHeight": false,
+                          "autoMaxWidth": false,
+                          "events": {
+                            "DocumentComplete": "HTMLТелоЗапросаДокументСформирован"
+                          }
+                        },
+                        {
+                          "input": "ТелоЗапроса",
+                          "path": "ТелоЗапроса",
+                          "title": "Тело запроса",
+                          "multiLine": true,
+                          "height": 1,
+                          "events": {
+                            "OnChange": "ТелоЗапросаПриИзменении"
+                          },
+                          "autoMaxHeight": false,
+                          "verticalStretch": true
+                        },
+                        {
+                          "button": "ПеренестиВКонструктор",
+                          "command": "ПеренестиВКонструктор",
+                          "title": "Перенести в конструктор",
+                          "type": "usual",
+                          "picture": "abs:Picture.png",
+                          "loadTransparent": true,
+                          "representation": "PictureAndText"
+                        },
+                        {
+                          "group": "collapsible",
+                          "name": "ГруппаЗаголовкиЗапроса",
+                          "title": "Дополнительные заголовки запроса",
+                          "collapsed": true,
+                          "children": [
+                            {
+                              "table": "ЗаголовкиЗапроса",
+                              "path": "ЗаголовкиЗапроса",
+                              "title": "Имя и значение заголовка",
+                              "rowFilter": true,
+                              "height": 5,
+                              "events": {
+                                "OnActivateRow": "ЗаголовкиЗапросаПриАктивизацииСтроки",
+                                "OnChange": "ТаблицаПараметровПриИзменении"
+                              },
+                              "columns": [
+                                {
+                                  "input": "ИмяЗаголовка",
+                                  "path": "ЗаголовкиЗапроса.Имя",
+                                  "title": "Имя",
+                                  "dropListButton": true,
+                                  "events": {
+                                    "OnChange": "ИмяЗаголовкаПриИзменении"
+                                  },
+                                  "choiceList": [
+                                    {
+                                      "value": "Accept",
+                                      "presentation": "Accept"
+                                    },
+                                    {
+                                      "value": "Content-Type",
+                                      "presentation": "Content-Type"
+                                    },
+                                    {
+                                      "value": "Authorization",
+                                      "presentation": "Authorization"
+                                    },
+                                    {
+                                      "value": "User-Agent",
+                                      "presentation": "User-Agent"
+                                    },
+                                    {
+                                      "value": "Cache-Control",
+                                      "presentation": "Cache-Control"
+                                    },
+                                    {
+                                      "value": "Accept-Language",
+                                      "presentation": "Accept-Language"
+                                    },
+                                    {
+                                      "value": "If-None-Match",
+                                      "presentation": "If-None-Match"
+                                    },
+                                    {
+                                      "value": "X-API-Key",
+                                      "presentation": "X-API-Key"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "input": "ЗначениеЗаголовка",
+                                  "path": "ЗаголовкиЗапроса.Значение",
+                                  "title": "Значение",
+                                  "dropListButton": true,
+                                  "tooltip": "Выберите значение для имени заголовка или введите своё",
+                                  "events": {
+                                    "StartChoice": "ЗначениеЗаголовкаНачалоВыбора",
+                                    "OnChange": "ПараметрЗапросаПриИзменении"
+                                  }
+                                }
+                              ],
+                              "verticalStretch": false
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "page": "СтраницаПараметры",
+                      "title": "Параметры",
+                      "children": [
+                        {
+                          "labelField": "ОшибкаПараметровURL",
+                          "path": "ОшибкаПараметровURL",
+                          "titleLocation": "none",
+                          "horizontalStretch": true
+                        },
+                        {
+                          "table": "ПараметрыURL",
+                          "path": "ПараметрыURL",
+                          "titleLocation": "none",
+                          "horizontalStretch": true,
+                          "verticalStretch": true,
+                          "events": {
+                            "OnStartEdit": "ПараметрыURLПриНачалеРедактирования",
+                            "OnChange": "ПараметрыURLПриИзменении"
+                          },
+                          "columns": [
+                            {
+                              "input": "ИмяПараметраURL",
+                              "path": "ПараметрыURL.Имя",
+                              "title": "Имя",
+                              "width": 30,
+                              "events": {
+                                "OnChange": "ПараметрыURLПриИзменении"
+                              }
+                            },
+                            {
+                              "input": "ЗначениеПараметраURL",
+                              "path": "ПараметрыURL.Значение",
+                              "title": "Значение",
+                              "width": 60,
+                              "horizontalStretch": true,
+                              "events": {
+                                "OnChange": "ПараметрыURLПриИзменении"
+                              }
+                            },
+                            {
+                              "check": "ИспользуетсяПараметрURL",
+                              "path": "ПараметрыURL.Используется",
+                              "title": "Используется",
+                              "events": {
+                                "OnChange": "ПараметрыURLПриИзменении"
+                              }
+                            }
+                          ],
+                          "commandBarLocation": "Top",
+                          "searchStringLocation": "CommandBar"
+                        }
+                      ]
+                    },
+                    {
+                      "page": "СтраницаКонструкторJSON",
+                      "title": "Конструктор JSON",
+                      "children": [
+                        {
+                          "label": "ПодсказкаКонструкторJSON",
+                          "title": "Выберите тип корня (объект или массив), затем добавляйте вложенные узлы. Максимум — 10 уровней.",
+                          "autoMaxWidth": false,
+                          "groupVerticalAlign": "Top",
+                          "height": 1,
+                          "horizontalStretch": true,
+                          "verticalAlign": "Top"
+                        },
+                        {
+                          "group": "alwaysHorizontal",
+                          "name": "КомандыКонструктораJSON",
+                          "children": [
+                            {
+                              "button": "ДобавитьУзелJSON",
+                              "command": "ДобавитьУзелJSON",
+                              "title": "Добавить вложенный",
+                              "type": "usual",
+                              "picture": "abs:Picture.png",
+                              "loadTransparent": true,
+                              "representation": "PictureAndText"
+                            },
+                            {
+                              "button": "УдалитьУзелJSON",
+                              "command": "УдалитьУзелJSON",
+                              "title": "Удалить узел",
+                              "type": "usual",
+                              "picture": "abs:Picture.png",
+                              "loadTransparent": true,
+                              "representation": "PictureAndText"
+                            },
+                            {
+                              "button": "СвернутьВсеJSON",
+                              "command": "СвернутьВсеJSON",
+                              "title": "Свернуть всё",
+                              "type": "usual",
+                              "picture": "abs:Picture.png",
+                              "loadTransparent": true,
+                              "representation": "Picture",
+                              "width": 4
+                            },
+                            {
+                              "button": "РазвернутьВсеJSON",
+                              "command": "РазвернутьВсеJSON",
+                              "title": "Развернуть всё",
+                              "type": "usual",
+                              "picture": "abs:Picture.png",
+                              "loadTransparent": true,
+                              "representation": "Picture",
+                              "width": 4
+                            },
+                            {
+                              "button": "СформироватьJSON",
+                              "command": "СформироватьJSON",
+                              "title": "Сформировать JSON",
+                              "type": "usual",
+                              "picture": "abs:Picture.png",
+                              "loadTransparent": true,
+                              "representation": "PictureAndText"
+                            },
+                            {
+                              "input": "ПоискЗначенияJSON",
+                              "path": "ПоискЗначенияJSON",
+                              "title": "Поиск по значениям",
+                              "events": {
+                                "OnChange": "ПоискЗначенияJSONПриИзменении"
+                              }
+                            },
+                            {
+                              "button": "НайтиДалееJSON",
+                              "command": "НайтиДалееJSON",
+                              "title": "Найти далее",
+                              "type": "usual",
+                              "picture": "abs:Picture.png",
+                              "loadTransparent": true,
+                              "representation": "Picture",
+                              "width": 4
+                            }
+                          ],
+                          "showTitle": false
+                        },
+                        {
+                          "table": "ДеревоJSON",
+                          "path": "ДеревоJSON",
+                          "title": "Структура JSON",
+                          "representation": "Tree",
+                          "changeRowSet": false,
+                          "changeRowOrder": false,
+                          "tableAutofill": false,
+                          "events": {
+                            "OnActivateRow": "ДеревоJSONПриАктивизацииСтроки",
+                            "OnChange": "ТаблицаПараметровПриИзменении"
+                          },
+                          "columns": [
+                            {
+                              "input": "ТипУзлаJSON",
+                              "path": "ДеревоJSON.Тип",
+                              "title": "Тип",
+                              "dropListButton": true,
+                              "events": {
+                                "OnChange": "ТипУзлаJSONПриИзменении"
+                              },
+                              "choiceList": [
+                                {
+                                  "value": "Объект",
+                                  "presentation": "Объект"
+                                },
+                                {
+                                  "value": "Массив",
+                                  "presentation": "Массив"
+                                },
+                                {
+                                  "value": "Строка",
+                                  "presentation": "Строка"
+                                },
+                                {
+                                  "value": "Число",
+                                  "presentation": "Число"
+                                },
+                                {
+                                  "value": "Булево",
+                                  "presentation": "Булево"
+                                },
+                                {
+                                  "value": "null",
+                                  "presentation": "null"
+                                }
+                              ]
+                            },
+                            {
+                              "input": "ИмяУзлаJSON",
+                              "path": "ДеревоJSON.Имя",
+                              "title": "Имя свойства",
+                              "events": {
+                                "OnChange": "ПараметрЗапросаПриИзменении"
+                              }
+                            },
+                            {
+                              "input": "ЗначениеУзлаJSON",
+                              "path": "ДеревоJSON.Значение",
+                              "title": "Значение",
+                              "dropListButton": true,
+                              "events": {
+                                "StartChoice": "ЗначениеУзлаJSONНачалоВыбора",
+                                "OnChange": "ПараметрЗапросаПриИзменении"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "input": "ОшибкаКонструктораJSON",
+                          "path": "ОшибкаКонструктораJSON",
+                          "title": "Состояние",
+                          "multiLine": true,
+                          "height": 1,
+                          "readOnly": true,
+                          "font": {
+                            "bold": true,
+                            "italic": false,
+                            "kind": "StyleItem",
+                            "ref": "style:NormalTextFont",
+                            "scale": 100,
+                            "strikeout": false,
+                            "underline": false
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "page": "СтраницаАвторизация",
+                      "title": "Авторизация",
+                      "children": [
+                        {
+                          "input": "СпособАвторизации",
+                          "path": "СпособАвторизации",
+                          "title": "Способ",
+                          "dropListButton": true,
+                          "events": {
+                            "OnChange": "СпособАвторизацииПриИзменении"
+                          },
+                          "choiceList": [
+                            {
+                              "value": "Нет",
+                              "presentation": "Без авторизации"
+                            },
+                            {
+                              "value": "Basic",
+                              "presentation": "Basic"
+                            },
+                            {
+                              "value": "Bearer",
+                              "presentation": "Bearer"
+                            },
+                            {
+                              "value": "APIKey",
+                              "presentation": "API key"
+                            },
+                            {
+                              "value": "JWT",
+                              "presentation": "Полученный JWT"
+                            }
+                          ]
+                        },
+                        {
+                          "group": "vertical",
+                          "name": "ГруппаBasic",
+                          "title": "Basic",
+                          "visible": false,
+                          "children": [
+                            {
+                              "input": "Логин",
+                              "path": "Логин",
+                              "title": "Логин",
+                              "events": {
+                                "OnChange": "ПараметрЗапросаПриИзменении"
+                              }
+                            },
+                            {
+                              "input": "Пароль",
+                              "path": "Пароль",
+                              "title": "Пароль",
+                              "passwordMode": true,
+                              "events": {
+                                "OnChange": "ПараметрЗапросаПриИзменении"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "group": "vertical",
+                          "name": "ГруппаBearer",
+                          "title": "Bearer",
+                          "visible": false,
+                          "children": [
+                            {
+                              "input": "ТокенBearer",
+                              "path": "ТокенBearer",
+                              "title": "Токен",
+                              "passwordMode": true,
+                              "events": {
+                                "OnChange": "ПараметрЗапросаПриИзменении"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "group": "vertical",
+                          "name": "ГруппаAPIKey",
+                          "title": "API key",
+                          "visible": false,
+                          "children": [
+                            {
+                              "input": "ИмяКлюча",
+                              "path": "ИмяКлюча",
+                              "title": "Имя ключа",
+                              "events": {
+                                "OnChange": "ПараметрЗапросаПриИзменении"
+                              }
+                            },
+                            {
+                              "input": "ЗначениеКлюча",
+                              "path": "ЗначениеКлюча",
+                              "title": "Значение ключа",
+                              "passwordMode": true,
+                              "events": {
+                                "OnChange": "ПараметрЗапросаПриИзменении"
+                              }
+                            },
+                            {
+                              "input": "РасположениеКлюча",
+                              "path": "РасположениеКлюча",
+                              "title": "Размещение",
+                              "dropListButton": true,
+                              "choiceList": [
+                                {
+                                  "value": "Заголовок",
+                                  "presentation": "Заголовок"
+                                },
+                                {
+                                  "value": "ПараметрURL",
+                                  "presentation": "Параметр URL"
+                                }
+                              ],
+                              "events": {
+                                "OnChange": "ПараметрЗапросаПриИзменении"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "group": "vertical",
+                          "name": "ГруппаJWT",
+                          "title": "Получение JWT",
+                          "visible": false,
+                          "children": [
+                            {
+                              "input": "АдресТокена",
+                              "path": "АдресТокена",
+                              "title": "URL токена",
+                              "events": {
+                                "OnChange": "ПараметрЗапросаПриИзменении"
+                              }
+                            },
+                            {
+                              "input": "МетодТокена",
+                              "path": "МетодТокена",
+                              "title": "Метод",
+                              "events": {
+                                "OnChange": "ПараметрЗапросаПриИзменении"
+                              }
+                            },
+                            {
+                              "button": "ПолучитьТокен",
+                              "command": "ПолучитьТокен",
+                              "title": "Получить JWT",
+                              "type": "usual",
+                              "picture": "abs:Picture.png",
+                              "loadTransparent": true,
+                              "representation": "PictureAndText"
+                            },
+                            {
+                              "group": "collapsible",
+                              "name": "ГруппаЗаголовкиТокена",
+                              "title": "Дополнительные заголовки получения токена",
+                              "collapsed": true,
+                              "children": [
+                                {
+                                  "table": "ЗаголовкиТокена",
+                                  "path": "ЗаголовкиТокена",
+                                  "title": "Имя и значение заголовка",
+                                  "rowFilter": true,
+                                  "height": 4,
+                                  "events": {
+                                    "OnActivateRow": "ЗаголовкиТокенаПриАктивизацииСтроки",
+                                    "OnChange": "ТаблицаПараметровПриИзменении"
+                                  },
+                                  "columns": [
+                                    {
+                                      "input": "ИмяЗаголовкаТокена",
+                                      "path": "ЗаголовкиТокена.Имя",
+                                      "title": "Имя",
+                                      "dropListButton": true,
+                                      "events": {
+                                        "OnChange": "ИмяЗаголовкаТокенаПриИзменении"
+                                      },
+                                      "choiceList": [
+                                        {
+                                          "value": "Accept",
+                                          "presentation": "Accept"
+                                        },
+                                        {
+                                          "value": "Content-Type",
+                                          "presentation": "Content-Type"
+                                        },
+                                        {
+                                          "value": "Authorization",
+                                          "presentation": "Authorization"
+                                        },
+                                        {
+                                          "value": "User-Agent",
+                                          "presentation": "User-Agent"
+                                        },
+                                        {
+                                          "value": "Cache-Control",
+                                          "presentation": "Cache-Control"
+                                        },
+                                        {
+                                          "value": "Accept-Language",
+                                          "presentation": "Accept-Language"
+                                        },
+                                        {
+                                          "value": "If-None-Match",
+                                          "presentation": "If-None-Match"
+                                        },
+                                        {
+                                          "value": "X-API-Key",
+                                          "presentation": "X-API-Key"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "input": "ЗначениеЗаголовкаТокена",
+                                      "path": "ЗаголовкиТокена.Значение",
+                                      "title": "Значение",
+                                      "dropListButton": true,
+                                      "tooltip": "Выберите значение для имени заголовка или введите своё",
+                                      "events": {
+                                        "StartChoice": "ЗначениеЗаголовкаТокенаНачалоВыбора",
+                                        "OnChange": "ПараметрЗапросаПриИзменении"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "input": "ТелоТокена",
+                              "path": "ТелоТокена",
+                              "title": "JSON-тело",
+                              "multiLine": true,
+                              "height": 5,
+                              "events": {
+                                "OnChange": "ПараметрЗапросаПриИзменении"
+                              }
+                            },
+                            {
+                              "input": "ПутьТокена",
+                              "path": "ПутьТокена",
+                              "title": "Путь к токену",
+                              "events": {
+                                "OnChange": "ПараметрЗапросаПриИзменении"
+                              }
+                            },
+                            {
+                              "input": "СостояниеТокена",
+                              "path": "СостояниеТокена",
+                              "title": "Состояние",
+                              "readOnly": true
+                            },
+                            {
+                              "input": "ПолеПолученныйJWT",
+                              "path": "ТокенJWT",
+                              "title": "Полученный JWT",
+                              "multiLine": true,
+                              "height": 2,
+                              "readOnly": true
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "page": "СтраницаОтвет",
+                      "title": "Результат",
+                      "children": [
+                        {
+                          "input": "ИтоговыйАдрес",
+                          "path": "ИтоговыйАдрес",
+                          "title": "Итоговый URL запроса",
+                          "readOnly": true,
+                          "horizontalStretch": true,
+                          "autoMaxWidth": false,
+                          "maxWidth": 60
+                        },
+                        {
+                          "group": "collapsible",
+                          "name": "ГруппаИтоговыеЗаголовкиЗапроса",
+                          "title": "Итоговые заголовки запроса",
+                          "collapsed": true,
+                          "children": [
+                            {
+                              "input": "ИтоговыеЗаголовкиЗапроса",
+                              "path": "ИтоговыеЗаголовкиЗапроса",
+                              "title": "Заголовки",
+                              "multiLine": true,
+                              "height": 3,
+                              "readOnly": true
+                            }
+                          ]
+                        },
+                        {
+                          "group": "collapsible",
+                          "name": "ГруппаИтоговоеТелоЗапроса",
+                          "title": "Итоговое тело запроса",
+                          "tooltip": "Группа итоговое тело запроса",
+                          "collapsed": true,
+                          "children": [
+                            {
+                              "input": "ОтправленноеТело",
+                              "path": "ОтправленноеТело",
+                              "title": "Тело запроса",
+                              "multiLine": true,
+                              "height": 6,
+                              "readOnly": true
+                            }
+                          ]
+                        },
+                        {
+                          "group": "alwaysHorizontal",
+                          "name": "СтрокаКодаИВремени",
+                          "height": 2,
+                          "verticalAlign": "Bottom",
+                          "representation": "None",
+                          "showTitle": false,
+                          "children": [
+                            {
+                              "input": "КодОтвета",
+                              "path": "КодОтвета",
+                              "title": "Код HTTP",
+                              "readOnly": true,
+                              "titleLocation": "left",
+                              "font": {
+                                "bold": true,
+                                "italic": false,
+                                "kind": "StyleItem",
+                                "ref": "style:NormalTextFont",
+                                "scale": 100,
+                                "strikeout": false,
+                                "underline": false
+                              }
+                            },
+                            {
+                              "labelField": "ВремяЗапросаДляПоказа",
+                              "path": "ВремяЗапросаДляПоказа",
+                              "titleLocation": "none",
+                              "font": {
+                                "bold": true,
+                                "italic": false,
+                                "kind": "StyleItem",
+                                "ref": "style:NormalTextFont",
+                                "scale": 100,
+                                "strikeout": false,
+                                "underline": false
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "group": "collapsible",
+                          "name": "ГруппаЗаголовкиОтвета",
+                          "title": "Заголовки ответа",
+                          "collapsed": true,
+                          "children": [
+                            {
+                              "input": "ЗаголовкиОтвета",
+                              "path": "ЗаголовкиОтвета",
+                              "title": "Заголовки",
+                              "multiLine": true,
+                              "height": 3,
+                              "readOnly": true
+                            }
+                          ]
+                        },
+                        {
+                          "input": "ТелоОтвета",
+                          "path": "ТелоОтвета",
+                          "title": "Тело ответа",
+                          "multiLine": true,
+                          "height": 7,
+                          "readOnly": true
+                        },
+                        {
+                          "input": "ОшибкаЗапроса",
+                          "path": "ОшибкаЗапроса",
+                          "title": "Ошибка соединения или проверки",
+                          "multiLine": true,
+                          "height": 1,
+                          "readOnly": true,
+                          "font": {
+                            "bold": true,
+                            "italic": false,
+                            "kind": "StyleItem",
+                            "ref": "style:NormalTextFont",
+                            "scale": 100,
+                            "strikeout": false,
+                            "underline": false
+                          }
+                        }
+                      ],
+                      "childrenAlign": "None"
+                    },
+                    {
+                      "page": "СтраницаСправка",
+                      "title": "Справка",
+                      "children": [
+                        {
+                          "html": "HTMLСправка",
+                          "path": "ТекстСправки",
+                          "titleLocation": "none",
+                          "readOnly": true,
+                          "height": 11,
+                          "autoMaxHeight": false,
+                          "autoMaxWidth": false
+                        }
+                      ]
+                    },
+                    {
+                      "page": "СтраницаDoom",
+                      "title": "Doom",
+                      "visible": false,
+                      "children": [
+                        {
+                          "html": "HTMLDoom",
+                          "path": "ТекстDoom",
+                          "titleLocation": "none",
+                          "readOnly": true,
+                          "autoMaxHeight": false,
+                          "autoMaxWidth": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "name": "АдресДляПоказа",
+      "type": "string"
+    },
+    {
+      "name": "ВремяЗапросаМс",
+      "type": "decimal(38,0,nonneg)"
+    },
+    {
+      "name": "ИзмереноВремяЗапроса",
+      "type": "boolean"
+    },
+    {
+      "name": "ВремяЗапросаДляПоказа",
+      "type": "string"
+    },
+    {
+      "name": "Объект",
+      "type": "ExternalDataProcessorObject.PostMegaMan",
+      "main": true
+    },
+    {
+      "name": "Метод",
+      "type": "string(40)"
+    },
+    {
+      "name": "Адрес",
+      "type": "string(2048)"
+    },
+    {
+      "name": "ТаймаутСекунд",
+      "type": "decimal(5,0,nonneg)"
+    },
+    {
+      "name": "ЗаголовкиЗапроса",
+      "type": "ValueTable",
+      "columns": [
+        {
+          "name": "Имя",
+          "type": "string(256)"
+        },
+        {
+          "name": "Значение",
+          "type": "string(2048)"
+        }
+      ]
+    },
+    {
+      "name": "ТелоЗапроса",
+      "type": "string"
+    },
+    {
+      "name": "ТекстРедактораЗапроса",
+      "type": "string"
+    },
+    {
+      "name": "ДеревоJSON",
+      "type": "ValueTree",
+      "columns": [
+        {
+          "name": "Имя",
+          "type": "string"
+        },
+        {
+          "name": "Тип",
+          "type": "string(20)"
+        },
+        {
+          "name": "Значение",
+          "type": "string"
+        },
+        {
+          "name": "Уровень",
+          "type": "decimal(2,0,nonneg)"
+        }
+      ]
+    },
+    {
+      "name": "ОшибкаКонструктораJSON",
+      "type": "string"
+    },
+    {
+      "name": "ПоискЗначенияJSON",
+      "type": "string"
+    },
+    {
+      "name": "ПоследнийПоискJSON",
+      "type": "string"
+    },
+    {
+      "name": "ТекстDoom",
+      "type": "string"
+    },
+    {
+      "name": "СпособАвторизации",
+      "type": "string(20)"
+    },
+    {
+      "name": "Логин",
+      "type": "string(256)"
+    },
+    {
+      "name": "Пароль",
+      "type": "string(1024)"
+    },
+    {
+      "name": "ТокенBearer",
+      "type": "string"
+    },
+    {
+      "name": "ИмяКлюча",
+      "type": "string(256)"
+    },
+    {
+      "name": "ЗначениеКлюча",
+      "type": "string(2048)"
+    },
+    {
+      "name": "РасположениеКлюча",
+      "type": "string(20)"
+    },
+    {
+      "name": "АдресТокена",
+      "type": "string(2048)"
+    },
+    {
+      "name": "МетодТокена",
+      "type": "string(40)"
+    },
+    {
+      "name": "ЗаголовкиТокена",
+      "type": "ValueTable",
+      "columns": [
+        {
+          "name": "Имя",
+          "type": "string(256)"
+        },
+        {
+          "name": "Значение",
+          "type": "string(2048)"
+        }
+      ]
+    },
+    {
+      "name": "ТелоТокена",
+      "type": "string"
+    },
+    {
+      "name": "ПутьТокена",
+      "type": "string(256)"
+    },
+    {
+      "name": "ТокенJWT",
+      "type": "string"
+    },
+    {
+      "name": "СостояниеТокена",
+      "type": "string(200)"
+    },
+    {
+      "name": "КодОтвета",
+      "type": "string(10)"
+    },
+    {
+      "name": "ИтоговыйАдрес",
+      "type": "string"
+    },
+    {
+      "name": "ОтправленноеТело",
+      "type": "string"
+    },
+    {
+      "name": "ИтоговыеЗаголовкиЗапроса",
+      "type": "string"
+    },
+    {
+      "name": "ЗаголовкиОтвета",
+      "type": "string"
+    },
+    {
+      "name": "ТелоОтвета",
+      "type": "string"
+    },
+    {
+      "name": "ОшибкаЗапроса",
+      "type": "string"
+    },
+    {
+      "name": "ТекстСправки",
+      "type": "string"
+    },
+    {
+      "name": "ПутьWorkSpace",
+      "type": "string"
+    },
+    {
+      "name": "ДеревоWorkSpace",
+      "type": "ValueTree",
+      "columns": [
+        {
+          "name": "Имя",
+          "type": "string"
+        },
+        {
+          "name": "ОтносительныйПуть",
+          "type": "string"
+        },
+        {
+          "name": "ВидУзла",
+          "type": "string(20)"
+        },
+        {
+          "name": "Картинка",
+          "type": "Picture"
+        }
+      ]
+    },
+    {
+      "name": "ПредпросмотрURL",
+      "type": "string"
+    },
+    {
+      "name": "ОшибкаПараметровURL",
+      "type": "string"
+    },
+    {
+      "name": "АдресПараметровURL",
+      "type": "string"
+    },
+    {
+      "name": "СнимокПараметровURL",
+      "type": "string"
+    },
+    {
+      "name": "ПараметрыURL",
+      "type": "ValueTable",
+      "columns": [
+        {
+          "name": "Имя",
+          "type": "string"
+        },
+        {
+          "name": "Значение",
+          "type": "string"
+        },
+        {
+          "name": "Используется",
+          "type": "boolean"
+        },
+        {
+          "name": "ИсходнаяПара",
+          "type": "string"
+        },
+        {
+          "name": "ИсходноеИмя",
+          "type": "string"
+        },
+        {
+          "name": "ИсходноеЗначение",
+          "type": "string"
+        },
+        {
+          "name": "ЕстьИсходнаяПара",
+          "type": "boolean"
+        },
+        {
+          "name": "НеразрешенныйШаблон",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "КонтекстВыполнения",
+      "type": "string(16)"
+    },
+    {
+      "name": "КлиентскийHTTPДоступен",
+      "type": "boolean"
+    }
+  ],
+  "commands": [
+    {
+      "name": "УдалитьWorkSpace",
+      "title": "Удалить",
+      "action": "УдалитьWorkSpaceОбработка"
+    },
+    {
+      "name": "Отправить",
+      "action": "ОтправитьОбработка"
+    },
+    {
+      "name": "ПолучитьТокен",
+      "action": "ПолучитьТокенОбработка"
+    },
+    {
+      "name": "ОткрытьСправку",
+      "action": "ОткрытьСправкуОбработка"
+    },
+    {
+      "name": "ДобавитьУзелJSON",
+      "action": "ДобавитьУзелJSONОбработка"
+    },
+    {
+      "name": "УдалитьУзелJSON",
+      "action": "УдалитьУзелJSONОбработка"
+    },
+    {
+      "name": "СвернутьВсеJSON",
+      "action": "СвернутьВсеJSONОбработка"
+    },
+    {
+      "name": "РазвернутьВсеJSON",
+      "action": "РазвернутьВсеJSONОбработка"
+    },
+    {
+      "name": "СформироватьJSON",
+      "action": "СформироватьJSONОбработка"
+    },
+    {
+      "name": "ПеренестиВКонструктор",
+      "action": "ПеренестиВКонструкторОбработка"
+    },
+    {
+      "name": "СохранитьВФайл",
+      "action": "СохранитьВФайлОбработка"
+    },
+    {
+      "name": "ЗагрузитьИзФайла",
+      "action": "ЗагрузитьИзФайлаОбработка"
+    },
+    {
+      "name": "ОчиститьВсе",
+      "action": "ОчиститьВсеОбработка"
+    },
+    {
+      "name": "НайтиДалееJSON",
+      "action": "НайтиДалееJSONОбработка"
+    },
+    {
+      "name": "ПереключитьПанельWorkSpace",
+      "title": "Показать боковую панель",
+      "action": "ПереключитьПанельWorkSpaceОбработка"
+    },
+    {
+      "name": "ВыбратьКаталогWorkSpace",
+      "title": "Выбрать каталог WorkSpace",
+      "action": "ВыбратьКаталогWorkSpaceОбработка"
+    },
+    {
+      "name": "ОбновитьWorkSpace",
+      "title": "Обновить дерево WorkSpace",
+      "action": "ОбновитьWorkSpaceОбработка"
+    },
+    {
+      "name": "ДобавитьЗапросWorkSpace",
+      "title": "Добавить новый запрос",
+      "action": "ДобавитьЗапросWorkSpaceОбработка"
+    },
+    {
+      "name": "ДобавитьКаталогWorkSpace",
+      "title": "Добавить новый каталог запросов",
+      "action": "ДобавитьКаталогWorkSpaceОбработка"
+    },
+    {
+      "name": "ИмпортироватьCURL",
+      "title": "Импортировать из cURL",
+      "action": "ИмпортироватьCURLОбработка"
+    },
+    {
+      "name": "ИмпортироватьPostman",
+      "title": "Импортировать из POSTman",
+      "action": "ИмпортироватьPostmanОбработка"
+    }
+  ]
+}

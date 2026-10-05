@@ -1,0 +1,175 @@
+{
+  "info": {
+    "_postman_id": "8a4c83c1-8cac-4f57-84f1-a2419c7eac21",
+    "name": "PostMegaMan Import Demo",
+    "description": "Семь запросов, вложенные и пустые папки, переменные и четыре режима авторизации.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "https://postman-echo.com", "type": "string" },
+    { "key": "readUrl", "value": "{{baseUrl}}/get", "type": "string" },
+    { "key": "demoToken", "value": "demo-postman-bearer-not-a-secret", "type": "string" },
+    { "key": "apiKey", "value": "demo-api-key-not-a-secret", "type": "string" },
+    { "key": "echoUser", "value": "postman", "type": "string" },
+    { "key": "echoPassword", "value": "password", "type": "string" },
+    { "key": "tag", "value": "collection-default", "type": "string" }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [{ "key": "token", "value": "{{demoToken}}", "type": "string" }]
+  },
+  "item": [
+    {
+      "name": "Чтение",
+      "item": [
+        {
+          "name": "01 GET - Bearer из коллекции",
+          "variable": [{ "key": "tag", "value": "request-override", "type": "string" }],
+          "request": {
+            "method": "GET",
+            "auth": null,
+            "url": {
+              "raw": "{{readUrl}}?source=tree&tag={{tag}}&tag=second",
+              "query": [
+                { "key": "source", "value": "tree" },
+                { "key": "tag", "value": "{{tag}}" },
+                { "key": "tag", "value": "second" },
+                { "key": "disabled", "value": "must-not-be-imported", "disabled": true }
+              ]
+            },
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "X-Import-Example", "value": "tree-get" },
+              { "key": "X-Disabled", "value": "must-not-be-imported", "disabled": true }
+            ]
+          },
+          "response": []
+        },
+        {
+          "name": "02 HEAD - без авторизации",
+          "request": {
+            "method": "HEAD",
+            "auth": { "type": "noauth" },
+            "url": "{{baseUrl}}/get?source=head",
+            "header": [{ "key": "X-Import-Example", "value": "tree-head" }]
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Изменение",
+      "item": [
+        {
+          "name": "JSON",
+          "item": [
+            {
+              "name": "03 POST - вложенный JSON",
+              "request": {
+                "method": "POST",
+                "url": "{{baseUrl}}/post?source=tree-json",
+                "header": [{ "key": "Accept", "value": "application/json" }],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"customer\": {\n        \"name\": \"Демонстрационный покупатель\",\n        \"address\": {\"city\": \"Москва\", \"street\": \"Тестовая\"}\n    },\n    \"items\": [\n        {\"sku\": \"A-1\", \"quantity\": 2, \"price\": 199.95},\n        {\"sku\": \"B-2\", \"quantity\": 1, \"price\": 0}\n    ],\n    \"active\": true,\n    \"note\": null\n}",
+                  "options": { "raw": { "language": "json" } }
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "04 PATCH - API key в заголовке",
+              "request": {
+                "method": "PATCH",
+                "url": "{{baseUrl}}/patch?source=tree-patch",
+                "auth": {
+                  "type": "apikey",
+                  "apikey": [
+                    { "key": "key", "value": "X-Demo-Key", "type": "string" },
+                    { "key": "value", "value": "{{apiKey}}", "type": "string" },
+                    { "key": "in", "value": "header", "type": "string" }
+                  ]
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" },
+                  { "key": "X-Demo-Key", "value": "{{apiKey}}" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"status\": \"updated\",\n    \"enabled\": false,\n    \"labels\": [\"patch\", \"импорт\"]\n}",
+                  "options": { "raw": { "language": "json" } }
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "05 POST - urlencoded",
+          "request": {
+            "method": "POST",
+            "auth": { "type": "noauth" },
+            "url": "{{baseUrl}}/post?source=tree-form",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "message", "value": "чай с молоком & мёд" },
+                { "key": "tag", "value": "first" },
+                { "key": "tag", "value": "second" },
+                { "key": "empty", "value": "" },
+                { "key": "disabled", "value": "must-not-be-imported", "disabled": true }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Авторизация",
+      "auth": {
+        "type": "basic",
+        "basic": [
+          { "key": "username", "value": "{{echoUser}}", "type": "string" },
+          { "key": "password", "value": "{{echoPassword}}", "type": "string" }
+        ]
+      },
+      "item": [
+        {
+          "name": "06 GET - Basic из папки",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/basic-auth",
+            "header": [{ "key": "Accept", "value": "application/json" }]
+          },
+          "response": []
+        },
+        {
+          "name": "07 GET - API key в query",
+          "request": {
+            "method": "GET",
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                { "key": "key", "value": "api_key", "type": "string" },
+                { "key": "value", "value": "{{apiKey}}", "type": "string" },
+                { "key": "in", "value": "query", "type": "string" }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/get?source=tree-api-key&api_key={{apiKey}}",
+              "query": [
+                { "key": "source", "value": "tree-api-key" },
+                { "key": "api_key", "value": "{{apiKey}}" }
+              ]
+            },
+            "header": [{ "key": "Accept", "value": "application/json" }]
+          },
+          "response": []
+        }
+      ]
+    },
+    { "name": "Пустой каталог", "item": [] }
+  ]
+}

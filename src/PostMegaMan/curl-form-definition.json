@@ -1,0 +1,13 @@
+{
+  "title": "Импортировать из cURL",
+  "properties": {"autoTitle": false, "width": 100, "height": 22, "commandBarLocation": "None"},
+  "elements": [
+    {"input": "КомандаCURL", "path": "КомандаCURL", "title": "Вставьте команду cURL", "titleLocation": "top", "multiLine": true, "width": 100, "height": 20, "horizontalStretch": true, "verticalStretch": true},
+    {"group": "alwaysHorizontal", "name": "Кнопки", "showTitle": false, "representation": "None", "children": [
+      {"button": "Применить", "picture": "abs:Picture.png", "loadTransparent": true, "representation": "PictureAndText", "command": "Применить", "title": "Импортировать", "type": "usual", "defaultButton": true},
+      {"button": "Отмена", "stdCommand": "Close", "title": "Отмена", "type": "usual"}
+    ]}
+  ],
+  "attributes": [{"name": "КомандаCURL", "type": "string"}],
+  "commands": [{"name": "Применить", "title": "Импортировать", "action": "ПрименитьОбработка"}]
+}

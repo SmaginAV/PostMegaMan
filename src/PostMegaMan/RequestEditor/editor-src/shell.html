@@ -1,0 +1,10 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; img-src data:">
+<style>html,body{margin:0;height:100%;overflow:hidden;background:white}#pm-editor{height:100%;overflow:hidden}textarea.bridge,button.bridge{display:none}</style>
+</head><body><div id="pm-editor"></div>
+<textarea class="bridge" id="pm-meta">{"ready":false,"error":"Редактор еще не готов."}</textarea>
+<textarea class="bridge" id="pm-command"></textarea><textarea class="bridge" id="pm-result"></textarea>
+<button class="bridge" id="pm-go" type="button">Обмен</button>
+<script>window.onerror=function(message){document.getElementById('pm-meta').value=JSON.stringify({ready:false,error:String(message)});};</script>
+<script>__EDITOR_BUNDLE__</script>
+</body></html>

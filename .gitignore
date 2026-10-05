@@ -1,0 +1,23 @@
+# Локальные настройки и секреты
+.dev.env
+.env
+.env.*
+v8project.local.yaml
+
+# Материалы для отдельной загрузки в GitHub Releases
+/release-assets/
+
+# Локальные базы, сборки и резервные копии
+BASE/
+.build/
+backups/
+workspace/
+WorkSpace/
+node_modules/
+*.log
+*.tmp
+
+# Настройки компьютера
+.idea/
+.vscode/
+Thumbs.db
