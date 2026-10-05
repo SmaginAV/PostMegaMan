@@ -1,5 +1,5 @@
 # PostMegaMan
-
+<img src="assets/postmegaman-jack-russell.png" width="128" alt="PostMegaMan">
 HTTP-клиент для **1С:Предприятия** в виде внешней обработки. Отправляй запросы, проверяй API и работай с JSON прямо в 1С — без установки БСП и изменения конфигурации.
 
 **[Скачать PostMegaMan.epf](https://github.com/SmaginAV/PostMegaMan/releases/latest)** · [Примеры импорта](examples/README.md) · [Сообщить об ошибке](https://github.com/SmaginAV/PostMegaMan/issues)
