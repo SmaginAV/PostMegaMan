@@ -7,7 +7,7 @@
     "characters": 1048576,
     "lineCharacters": 131072
   },
-  "htmlSha256": "cb2880a0a64b43474e9fe55b4494620ff96c83c469a946bc265728dc1a4ff245",
+  "htmlSha256": "ad7f32f84553c6176ac8d7e129c4ad3609d46d2febecfd558557dece1a80f267",
   "lockSha256": "a76b335ae75bdc5769e7c2043cc980b4c84c84f718612d2ccab154de3f8acd79",
   "sources": [
     {
@@ -64,7 +64,7 @@
     },
     {
       "path": "editor-src/editor.js",
-      "sha256": "53c93208bc110fca873587620680738950e718126090594239f0de3a9764caad"
+      "sha256": "14c0f0cd21f0aea270c647d8708aefaca9b4a92abe3e940cedfb98a54f099ff9"
     }
   ],
   "packages": [

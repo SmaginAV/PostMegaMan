@@ -637,6 +637,9 @@
 								<Pages name="Страницы" id="24">
 									<PagesRepresentation>TabsOnTop</PagesRepresentation>
 									<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="25"/>
+									<Events>
+										<Event name="OnCurrentPageChange">СтраницыПриСменеСтраницы</Event>
+									</Events>
 									<ChildItems>
 										<Page name="СтраницаЗапрос" id="26">
 											<Title>

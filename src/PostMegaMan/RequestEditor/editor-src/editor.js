@@ -1,7 +1,7 @@
 import {EditorState, Compartment} from '@codemirror/state';
 import {EditorView, keymap, lineNumbers, drawSelection, highlightActiveLine} from '@codemirror/view';
-import {defaultKeymap, history, historyKeymap, undo, redo} from '@codemirror/commands';
-import {syntaxHighlighting, HighlightStyle, forceParsing} from '@codemirror/language';
+import {defaultKeymap, history, historyKeymap, indentWithTab, undo, redo} from '@codemirror/commands';
+import {syntaxHighlighting, HighlightStyle, forceParsing, indentUnit} from '@codemirror/language';
 import {json} from '@codemirror/lang-json';
 import {tags} from '@lezer/highlight';
 
@@ -140,9 +140,10 @@ function install(text, nextSession, allowed) {
   if (mode==='json') {
     view = new EditorView({parent:mount, state:EditorState.create({doc:text, extensions:[
       EditorState.lineSeparator.of(separator.value),
+      indentUnit.of('\t'),
       permission.of([EditorState.readOnly.of(!allowed), EditorView.editable.of(allowed)]),
       lineNumbers(), drawSelection(), highlightActiveLine(), history(),
-      keymap.of([...defaultKeymap, ...historyKeymap]), json(), syntaxHighlighting(colors), theme,
+      keymap.of([indentWithTab, ...defaultKeymap, ...historyKeymap]), json(), syntaxHighlighting(colors), theme,
       EditorView.clipboardInputFilter.of(clipboardText),
       EditorView.updateListener.of(update => {
         // Подготавливаем новые видимые строки до отрисовки, без фонового появления цветов.

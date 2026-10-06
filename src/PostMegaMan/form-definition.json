@@ -393,6 +393,9 @@
                 {
                   "pages": "Страницы",
                   "pagesRepresentation": "TabsOnTop",
+                  "events": {
+                    "OnCurrentPageChange": "СтраницыПриСменеСтраницы"
+                  },
                   "children": [
                     {
                       "page": "СтраницаЗапрос",
