@@ -173,6 +173,22 @@
 							</Title>
 							<ExtendedTooltip name="ДобавитьЗапросWorkSpaceРасширеннаяПодсказка" id="301"/>
 						</Button>
+						<Button name="КопироватьЗапросWorkSpace" id="513">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КопироватьЗапросWorkSpace</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Копировать</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Representation>PictureAndText</Representation>
+							<ExtendedTooltip name="КопироватьЗапросWorkSpaceРасширеннаяПодсказка" id="514"/>
+						</Button>
 						<Button name="ДобавитьКаталогWorkSpace" id="302">
 							<Type>UsualButton</Type>
 							<Representation>PictureAndText</Representation>
@@ -3104,6 +3120,15 @@
 				</v8:item>
 			</Title>
 			<Action>ИмпортироватьPostmanОбработка</Action>
+		</Command>
+		<Command name="КопироватьЗапросWorkSpace" id="463">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>КопироватьЗапросWorkSpaceОбработка</Action>
 		</Command>
 	</Commands>
 </Form>

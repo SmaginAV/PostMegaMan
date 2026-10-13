@@ -118,6 +118,15 @@
               "tooltip": "Добавить новый запрос"
             },
             {
+              "button": "КопироватьЗапросWorkSpace",
+              "command": "КопироватьЗапросWorkSpace",
+              "title": "Копировать",
+              "type": "usual",
+              "picture": "abs:Picture.png",
+              "loadTransparent": true,
+              "representation": "PictureAndText"
+            },
+            {
               "button": "ДобавитьКаталогWorkSpace",
               "command": "ДобавитьКаталогWorkSpace",
               "title": "Добавить новый каталог запросов",
@@ -1529,6 +1538,11 @@
       "name": "ДобавитьЗапросWorkSpace",
       "title": "Добавить новый запрос",
       "action": "ДобавитьЗапросWorkSpaceОбработка"
+    },
+    {
+      "name": "КопироватьЗапросWorkSpace",
+      "title": "Копировать",
+      "action": "КопироватьЗапросWorkSpaceОбработка"
     },
     {
       "name": "ДобавитьКаталогWorkSpace",
