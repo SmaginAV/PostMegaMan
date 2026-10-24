@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
@@ -25,7 +25,7 @@
 			<VerticalAlign>Top</VerticalAlign>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="РабочаяОбластьРасширеннаяПодсказка" id="272"/>
+			<ExtendedTooltip name="РабочаяОбластьРасширеннаяПодсказка" id="272" />
 			<ChildItems>
 				<UsualGroup name="ГруппаWorkSpace" id="273">
 					<Visible>false</Visible>
@@ -33,14 +33,14 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаWorkSpaceРасширеннаяПодсказка" id="274"/>
+					<ExtendedTooltip name="ГруппаWorkSpaceРасширеннаяПодсказка" id="274" />
 					<ChildItems>
 						<UsualGroup name="СтрокаПутиWorkSpace" id="275">
 							<HorizontalStretch>true</HorizontalStretch>
 							<Group>AlwaysHorizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="СтрокаПутиWorkSpaceРасширеннаяПодсказка" id="276"/>
+							<ExtendedTooltip name="СтрокаПутиWorkSpaceРасширеннаяПодсказка" id="276" />
 							<ChildItems>
 								<InputField name="ПутьWorkSpace" id="277">
 									<DataPath>ПутьWorkSpace</DataPath>
@@ -54,8 +54,8 @@
 									<Width>20</Width>
 									<HorizontalStretch>true</HorizontalStretch>
 									<ClearButton>true</ClearButton>
-									<ContextMenu name="ПутьWorkSpaceКонтекстноеМеню" id="278"/>
-									<ExtendedTooltip name="ПутьWorkSpaceРасширеннаяПодсказка" id="279"/>
+									<ContextMenu name="ПутьWorkSpaceКонтекстноеМеню" id="278" />
+									<ExtendedTooltip name="ПутьWorkSpaceРасширеннаяПодсказка" id="279" />
 									<Events>
 										<Event name="OnChange">ПутьWorkSpaceПриИзменении</Event>
 									</Events>
@@ -74,7 +74,7 @@
 											<v8:content>Выбрать каталог WorkSpace</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="ВыбратьКаталогWorkSpaceРасширеннаяПодсказка" id="281"/>
+									<ExtendedTooltip name="ВыбратьКаталогWorkSpaceРасширеннаяПодсказка" id="281" />
 								</Button>
 								<Button name="ОбновитьWorkSpace" id="282">
 									<Type>UsualButton</Type>
@@ -90,7 +90,7 @@
 											<v8:content>Обновить дерево WorkSpace</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="ОбновитьWorkSpaceРасширеннаяПодсказка" id="283"/>
+									<ExtendedTooltip name="ОбновитьWorkSpaceРасширеннаяПодсказка" id="283" />
 								</Button>
 							</ChildItems>
 						</UsualGroup>
@@ -106,34 +106,34 @@
 							<DataPath>ДеревоWorkSpace</DataPath>
 							<RowPictureDataPath>ДеревоWorkSpace.Картинка</RowPictureDataPath>
 							<SearchStringLocation>None</SearchStringLocation>
-							<ContextMenu name="ДеревоWorkSpaceКонтекстноеМеню" id="285"/>
+							<ContextMenu name="ДеревоWorkSpaceКонтекстноеМеню" id="285" />
 							<AutoCommandBar name="ДеревоWorkSpaceКоманднаяПанель" id="286">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ДеревоWorkSpaceРасширеннаяПодсказка" id="287"/>
+							<ExtendedTooltip name="ДеревоWorkSpaceРасширеннаяПодсказка" id="287" />
 							<SearchStringAddition name="ДеревоWorkSpaceСтрокаПоиска" id="288">
 								<AdditionSource>
 									<Item>ДеревоWorkSpace</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ДеревоWorkSpaceСтрокаПоискаКонтекстноеМеню" id="289"/>
-								<ExtendedTooltip name="ДеревоWorkSpaceСтрокаПоискаРасширеннаяПодсказка" id="290"/>
+								<ContextMenu name="ДеревоWorkSpaceСтрокаПоискаКонтекстноеМеню" id="289" />
+								<ExtendedTooltip name="ДеревоWorkSpaceСтрокаПоискаРасширеннаяПодсказка" id="290" />
 							</SearchStringAddition>
 							<ViewStatusAddition name="ДеревоWorkSpaceСостояниеПросмотра" id="291">
 								<AdditionSource>
 									<Item>ДеревоWorkSpace</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ДеревоWorkSpaceСостояниеПросмотраКонтекстноеМеню" id="292"/>
-								<ExtendedTooltip name="ДеревоWorkSpaceСостояниеПросмотраРасширеннаяПодсказка" id="293"/>
+								<ContextMenu name="ДеревоWorkSpaceСостояниеПросмотраКонтекстноеМеню" id="292" />
+								<ExtendedTooltip name="ДеревоWorkSpaceСостояниеПросмотраРасширеннаяПодсказка" id="293" />
 							</ViewStatusAddition>
 							<SearchControlAddition name="ДеревоWorkSpaceУправлениеПоиском" id="294">
 								<AdditionSource>
 									<Item>ДеревоWorkSpace</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="ДеревоWorkSpaceУправлениеПоискомКонтекстноеМеню" id="295"/>
-								<ExtendedTooltip name="ДеревоWorkSpaceУправлениеПоискомРасширеннаяПодсказка" id="296"/>
+								<ContextMenu name="ДеревоWorkSpaceУправлениеПоискомКонтекстноеМеню" id="295" />
+								<ExtendedTooltip name="ДеревоWorkSpaceУправлениеПоискомРасширеннаяПодсказка" id="296" />
 							</SearchControlAddition>
 							<Events>
 								<Event name="DragCheck">ДеревоWorkSpaceПроверкаПеретаскивания</Event>
@@ -152,8 +152,8 @@
 											<v8:content>Запросы</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="ИмяУзлаWorkSpaceКонтекстноеМеню" id="298"/>
-									<ExtendedTooltip name="ИмяУзлаWorkSpaceРасширеннаяПодсказка" id="299"/>
+									<ContextMenu name="ИмяУзлаWorkSpaceКонтекстноеМеню" id="298" />
+									<ExtendedTooltip name="ИмяУзлаWorkSpaceРасширеннаяПодсказка" id="299" />
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -171,7 +171,7 @@
 									<v8:content>Добавить новый запрос</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="ДобавитьЗапросWorkSpaceРасширеннаяПодсказка" id="301"/>
+							<ExtendedTooltip name="ДобавитьЗапросWorkSpaceРасширеннаяПодсказка" id="301" />
 						</Button>
 						<Button name="КопироватьЗапросWorkSpace" id="513">
 							<Type>UsualButton</Type>
@@ -187,7 +187,7 @@
 								<xr:LoadTransparent>true</xr:LoadTransparent>
 							</Picture>
 							<Representation>PictureAndText</Representation>
-							<ExtendedTooltip name="КопироватьЗапросWorkSpaceРасширеннаяПодсказка" id="514"/>
+							<ExtendedTooltip name="КопироватьЗапросWorkSpaceРасширеннаяПодсказка" id="514" />
 						</Button>
 						<Button name="ДобавитьКаталогWorkSpace" id="302">
 							<Type>UsualButton</Type>
@@ -203,7 +203,7 @@
 									<v8:content>Добавить новый каталог запросов</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="ДобавитьКаталогWorkSpaceРасширеннаяПодсказка" id="303"/>
+							<ExtendedTooltip name="ДобавитьКаталогWorkSpaceРасширеннаяПодсказка" id="303" />
 						</Button>
 						<Button name="УдалитьWorkSpace" id="400">
 							<Type>UsualButton</Type>
@@ -219,7 +219,7 @@
 									<v8:content>Удалить</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="УдалитьWorkSpaceРасширеннаяПодсказка" id="401"/>
+							<ExtendedTooltip name="УдалитьWorkSpaceРасширеннаяПодсказка" id="401" />
 						</Button>
 					</ChildItems>
 				</UsualGroup>
@@ -232,7 +232,7 @@
 					<VerticalAlign>Top</VerticalAlign>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ПраваяОбластьРасширеннаяПодсказка" id="309"/>
+					<ExtendedTooltip name="ПраваяОбластьРасширеннаяПодсказка" id="309" />
 					<ChildItems>
 						<UsualGroup name="ГруппаКоманды" id="476">
 							<Title>
@@ -250,7 +250,7 @@
 							<Group>AlwaysHorizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="477"/>
+							<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="477" />
 							<ChildItems>
 								<Button name="Отправить" id="14">
 									<Type>UsualButton</Type>
@@ -273,7 +273,7 @@
 											<v8:content>Отправить</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="ОтправитьРасширеннаяПодсказка" id="15"/>
+									<ExtendedTooltip name="ОтправитьРасширеннаяПодсказка" id="15" />
 								</Button>
 								<CommandBar name="КомандыЗапроса" id="472">
 									<Title>
@@ -288,7 +288,7 @@
 											<v8:content>Команды запроса</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="КомандыЗапросаРасширеннаяПодсказка" id="473"/>
+									<ExtendedTooltip name="КомандыЗапросаРасширеннаяПодсказка" id="473" />
 									<ChildItems>
 										<Button name="СохранитьВФайл" id="16">
 											<Type>CommandBarButton</Type>
@@ -305,7 +305,7 @@
 												</v8:item>
 											</Title>
 											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-											<ExtendedTooltip name="СохранитьВФайлРасширеннаяПодсказка" id="17"/>
+											<ExtendedTooltip name="СохранитьВФайлРасширеннаяПодсказка" id="17" />
 										</Button>
 										<Button name="ЗагрузитьИзФайла" id="18">
 											<Type>CommandBarButton</Type>
@@ -322,7 +322,7 @@
 												</v8:item>
 											</Title>
 											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-											<ExtendedTooltip name="ЗагрузитьИзФайлаРасширеннаяПодсказка" id="19"/>
+											<ExtendedTooltip name="ЗагрузитьИзФайлаРасширеннаяПодсказка" id="19" />
 										</Button>
 										<Button name="ОчиститьВсе" id="20">
 											<Type>CommandBarButton</Type>
@@ -339,7 +339,7 @@
 												</v8:item>
 											</Title>
 											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-											<ExtendedTooltip name="ОчиститьВсеРасширеннаяПодсказка" id="21"/>
+											<ExtendedTooltip name="ОчиститьВсеРасширеннаяПодсказка" id="21" />
 										</Button>
 										<Button name="ПереключитьПанельWorkSpace" id="306">
 											<Type>CommandBarButton</Type>
@@ -356,7 +356,7 @@
 												</v8:item>
 											</Title>
 											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-											<ExtendedTooltip name="ПереключитьПанельWorkSpaceРасширеннаяПодсказка" id="307"/>
+											<ExtendedTooltip name="ПереключитьПанельWorkSpaceРасширеннаяПодсказка" id="307" />
 										</Button>
 										<Popup name="ГруппаИмпорт" id="474">
 											<Title>
@@ -376,7 +376,7 @@
 												<xr:LoadTransparent>true</xr:LoadTransparent>
 											</Picture>
 											<Representation>PictureAndText</Representation>
-											<ExtendedTooltip name="ГруппаИмпортРасширеннаяПодсказка" id="475"/>
+											<ExtendedTooltip name="ГруппаИмпортРасширеннаяПодсказка" id="475" />
 											<ChildItems>
 												<Button name="ИмпортироватьCURL" id="468">
 													<Type>CommandBarButton</Type>
@@ -393,7 +393,7 @@
 														</v8:item>
 													</Title>
 													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-													<ExtendedTooltip name="ИмпортироватьCURLРасширеннаяПодсказка" id="469"/>
+													<ExtendedTooltip name="ИмпортироватьCURLРасширеннаяПодсказка" id="469" />
 												</Button>
 												<Button name="ИмпортироватьPostman" id="470">
 													<Type>CommandBarButton</Type>
@@ -410,7 +410,7 @@
 														</v8:item>
 													</Title>
 													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-													<ExtendedTooltip name="ИмпортироватьPostmanРасширеннаяПодсказка" id="471"/>
+													<ExtendedTooltip name="ИмпортироватьPostmanРасширеннаяПодсказка" id="471" />
 												</Button>
 											</ChildItems>
 										</Popup>
@@ -430,7 +430,7 @@
 												</v8:item>
 											</Title>
 											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-											<ExtendedTooltip name="ОткрытьСправкуРасширеннаяПодсказка" id="23"/>
+											<ExtendedTooltip name="ОткрытьСправкуРасширеннаяПодсказка" id="23" />
 										</Button>
 									</ChildItems>
 								</CommandBar>
@@ -444,7 +444,7 @@
 							<VerticalAlign>Top</VerticalAlign>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ОсновнаяОбластьРасширеннаяПодсказка" id="305"/>
+							<ExtendedTooltip name="ОсновнаяОбластьРасширеннаяПодсказка" id="305" />
 							<ChildItems>
 								<UsualGroup name="СтрокаЗапроса" id="1">
 									<Height>3</Height>
@@ -456,7 +456,7 @@
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<BackColor>web:WhiteSmoke</BackColor>
-									<ExtendedTooltip name="СтрокаЗапросаРасширеннаяПодсказка" id="2"/>
+									<ExtendedTooltip name="СтрокаЗапросаРасширеннаяПодсказка" id="2" />
 									<ChildItems>
 										<InputField name="Метод" id="3">
 											<DataPath>Метод</DataPath>
@@ -472,7 +472,7 @@
 											<DropListButton>true</DropListButton>
 											<ChoiceList>
 												<xr:Item>
-													<xr:Presentation/>
+													<xr:Presentation />
 													<xr:CheckState>0</xr:CheckState>
 													<xr:Value xsi:type="FormChoiceListDesTimeValue">
 														<Presentation>
@@ -485,7 +485,7 @@
 													</xr:Value>
 												</xr:Item>
 												<xr:Item>
-													<xr:Presentation/>
+													<xr:Presentation />
 													<xr:CheckState>0</xr:CheckState>
 													<xr:Value xsi:type="FormChoiceListDesTimeValue">
 														<Presentation>
@@ -498,7 +498,7 @@
 													</xr:Value>
 												</xr:Item>
 												<xr:Item>
-													<xr:Presentation/>
+													<xr:Presentation />
 													<xr:CheckState>0</xr:CheckState>
 													<xr:Value xsi:type="FormChoiceListDesTimeValue">
 														<Presentation>
@@ -511,7 +511,7 @@
 													</xr:Value>
 												</xr:Item>
 												<xr:Item>
-													<xr:Presentation/>
+													<xr:Presentation />
 													<xr:CheckState>0</xr:CheckState>
 													<xr:Value xsi:type="FormChoiceListDesTimeValue">
 														<Presentation>
@@ -524,7 +524,7 @@
 													</xr:Value>
 												</xr:Item>
 												<xr:Item>
-													<xr:Presentation/>
+													<xr:Presentation />
 													<xr:CheckState>0</xr:CheckState>
 													<xr:Value xsi:type="FormChoiceListDesTimeValue">
 														<Presentation>
@@ -537,7 +537,7 @@
 													</xr:Value>
 												</xr:Item>
 												<xr:Item>
-													<xr:Presentation/>
+													<xr:Presentation />
 													<xr:CheckState>0</xr:CheckState>
 													<xr:Value xsi:type="FormChoiceListDesTimeValue">
 														<Presentation>
@@ -550,7 +550,7 @@
 													</xr:Value>
 												</xr:Item>
 												<xr:Item>
-													<xr:Presentation/>
+													<xr:Presentation />
 													<xr:CheckState>0</xr:CheckState>
 													<xr:Value xsi:type="FormChoiceListDesTimeValue">
 														<Presentation>
@@ -563,7 +563,7 @@
 													</xr:Value>
 												</xr:Item>
 												<xr:Item>
-													<xr:Presentation/>
+													<xr:Presentation />
 													<xr:CheckState>0</xr:CheckState>
 													<xr:Value xsi:type="FormChoiceListDesTimeValue">
 														<Presentation>
@@ -576,7 +576,7 @@
 													</xr:Value>
 												</xr:Item>
 												<xr:Item>
-													<xr:Presentation/>
+													<xr:Presentation />
 													<xr:CheckState>0</xr:CheckState>
 													<xr:Value xsi:type="FormChoiceListDesTimeValue">
 														<Presentation>
@@ -589,9 +589,9 @@
 													</xr:Value>
 												</xr:Item>
 											</ChoiceList>
-											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-											<ContextMenu name="МетодКонтекстноеМеню" id="4"/>
-											<ExtendedTooltip name="МетодРасширеннаяПодсказка" id="5"/>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100" />
+											<ContextMenu name="МетодКонтекстноеМеню" id="4" />
+											<ExtendedTooltip name="МетодРасширеннаяПодсказка" id="5" />
 											<Events>
 												<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 											</Events>
@@ -609,9 +609,9 @@
 											<HorizontalAlign>Center</HorizontalAlign>
 											<Width>11</Width>
 											<HorizontalStretch>false</HorizontalStretch>
-											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-											<ContextMenu name="КонтекстВыполненияКонтекстноеМеню" id="511"/>
-											<ExtendedTooltip name="КонтекстВыполненияРасширеннаяПодсказка" id="512"/>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100" />
+											<ContextMenu name="КонтекстВыполненияКонтекстноеМеню" id="511" />
+											<ExtendedTooltip name="КонтекстВыполненияРасширеннаяПодсказка" id="512" />
 											<Events>
 												<Event name="OnChange">КонтекстВыполненияПриИзменении</Event>
 											</Events>
@@ -627,8 +627,8 @@
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<MaxWidth>60</MaxWidth>
 											<HorizontalStretch>true</HorizontalStretch>
-											<ContextMenu name="АдресКонтекстноеМеню" id="7"/>
-											<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="8"/>
+											<ContextMenu name="АдресКонтекстноеМеню" id="7" />
+											<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="8" />
 											<Events>
 												<Event name="OnChange">АдресПриИзменении</Event>
 											</Events>
@@ -642,8 +642,8 @@
 												</v8:item>
 											</Title>
 											<Width>8</Width>
-											<ContextMenu name="ТаймаутСекундКонтекстноеМеню" id="10"/>
-											<ExtendedTooltip name="ТаймаутСекундРасширеннаяПодсказка" id="11"/>
+											<ContextMenu name="ТаймаутСекундКонтекстноеМеню" id="10" />
+											<ExtendedTooltip name="ТаймаутСекундРасширеннаяПодсказка" id="11" />
 											<Events>
 												<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 											</Events>
@@ -652,7 +652,7 @@
 								</UsualGroup>
 								<Pages name="Страницы" id="24">
 									<PagesRepresentation>TabsOnTop</PagesRepresentation>
-									<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="25"/>
+									<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="25" />
 									<Events>
 										<Event name="OnCurrentPageChange">СтраницыПриСменеСтраницы</Event>
 									</Events>
@@ -664,7 +664,7 @@
 													<v8:content>Запрос</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="СтраницаЗапросРасширеннаяПодсказка" id="27"/>
+											<ExtendedTooltip name="СтраницаЗапросРасширеннаяПодсказка" id="27" />
 											<ChildItems>
 												<UsualGroup name="ГруппаТелоЗапроса" id="478">
 													<Title>
@@ -684,7 +684,7 @@
 													<Group>Vertical</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ГруппаТелоЗапросаРасширеннаяПодсказка" id="479"/>
+													<ExtendedTooltip name="ГруппаТелоЗапросаРасширеннаяПодсказка" id="479" />
 													<ChildItems>
 														<HTMLDocumentField name="HTMLТелоЗапроса" id="461">
 															<DataPath>ТекстРедактораЗапроса</DataPath>
@@ -699,8 +699,8 @@
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<Height>1</Height>
 															<AutoMaxHeight>false</AutoMaxHeight>
-															<ContextMenu name="HTMLТелоЗапросаКонтекстноеМеню" id="462"/>
-															<ExtendedTooltip name="HTMLТелоЗапросаРасширеннаяПодсказка" id="463"/>
+															<ContextMenu name="HTMLТелоЗапросаКонтекстноеМеню" id="462" />
+															<ExtendedTooltip name="HTMLТелоЗапросаРасширеннаяПодсказка" id="463" />
 															<Events>
 																<Event name="DocumentComplete">HTMLТелоЗапросаДокументСформирован</Event>
 															</Events>
@@ -718,8 +718,8 @@
 															<AutoMaxHeight>false</AutoMaxHeight>
 															<VerticalStretch>true</VerticalStretch>
 															<MultiLine>true</MultiLine>
-															<ContextMenu name="ТелоЗапросаКонтекстноеМеню" id="29"/>
-															<ExtendedTooltip name="ТелоЗапросаРасширеннаяПодсказка" id="30"/>
+															<ContextMenu name="ТелоЗапросаКонтекстноеМеню" id="29" />
+															<ExtendedTooltip name="ТелоЗапросаРасширеннаяПодсказка" id="30" />
 															<Events>
 																<Event name="OnChange">ТелоЗапросаПриИзменении</Event>
 															</Events>
@@ -738,7 +738,7 @@
 																	<v8:content>Перенести в конструктор</v8:content>
 																</v8:item>
 															</Title>
-															<ExtendedTooltip name="ПеренестиВКонструкторРасширеннаяПодсказка" id="32"/>
+															<ExtendedTooltip name="ПеренестиВКонструкторРасширеннаяПодсказка" id="32" />
 														</Button>
 													</ChildItems>
 												</UsualGroup>
@@ -754,7 +754,7 @@
 													<Group>Vertical</Group>
 													<Behavior>Collapsible</Behavior>
 													<Collapsed>true</Collapsed>
-													<ExtendedTooltip name="ГруппаЗаголовкиЗапросаРасширеннаяПодсказка" id="34"/>
+													<ExtendedTooltip name="ГруппаЗаголовкиЗапросаРасширеннаяПодсказка" id="34" />
 													<ChildItems>
 														<Table name="ЗаголовкиЗапроса" id="35">
 															<Height>10</Height>
@@ -766,33 +766,33 @@
 																	<v8:content>Имя и значение заголовка</v8:content>
 																</v8:item>
 															</Title>
-															<RowFilter xsi:nil="true"/>
-															<ContextMenu name="ЗаголовкиЗапросаКонтекстноеМеню" id="36"/>
-															<AutoCommandBar name="ЗаголовкиЗапросаКоманднаяПанель" id="37"/>
-															<ExtendedTooltip name="ЗаголовкиЗапросаРасширеннаяПодсказка" id="38"/>
+															<RowFilter xsi:nil="true" />
+															<ContextMenu name="ЗаголовкиЗапросаКонтекстноеМеню" id="36" />
+															<AutoCommandBar name="ЗаголовкиЗапросаКоманднаяПанель" id="37" />
+															<ExtendedTooltip name="ЗаголовкиЗапросаРасширеннаяПодсказка" id="38" />
 															<SearchStringAddition name="ЗаголовкиЗапросаСтрокаПоиска" id="39">
 																<AdditionSource>
 																	<Item>ЗаголовкиЗапроса</Item>
 																	<Type>SearchStringRepresentation</Type>
 																</AdditionSource>
-																<ContextMenu name="ЗаголовкиЗапросаСтрокаПоискаКонтекстноеМеню" id="40"/>
-																<ExtendedTooltip name="ЗаголовкиЗапросаСтрокаПоискаРасширеннаяПодсказка" id="41"/>
+																<ContextMenu name="ЗаголовкиЗапросаСтрокаПоискаКонтекстноеМеню" id="40" />
+																<ExtendedTooltip name="ЗаголовкиЗапросаСтрокаПоискаРасширеннаяПодсказка" id="41" />
 															</SearchStringAddition>
 															<ViewStatusAddition name="ЗаголовкиЗапросаСостояниеПросмотра" id="42">
 																<AdditionSource>
 																	<Item>ЗаголовкиЗапроса</Item>
 																	<Type>ViewStatusRepresentation</Type>
 																</AdditionSource>
-																<ContextMenu name="ЗаголовкиЗапросаСостояниеПросмотраКонтекстноеМеню" id="43"/>
-																<ExtendedTooltip name="ЗаголовкиЗапросаСостояниеПросмотраРасширеннаяПодсказка" id="44"/>
+																<ContextMenu name="ЗаголовкиЗапросаСостояниеПросмотраКонтекстноеМеню" id="43" />
+																<ExtendedTooltip name="ЗаголовкиЗапросаСостояниеПросмотраРасширеннаяПодсказка" id="44" />
 															</ViewStatusAddition>
 															<SearchControlAddition name="ЗаголовкиЗапросаУправлениеПоиском" id="45">
 																<AdditionSource>
 																	<Item>ЗаголовкиЗапроса</Item>
 																	<Type>SearchControl</Type>
 																</AdditionSource>
-																<ContextMenu name="ЗаголовкиЗапросаУправлениеПоискомКонтекстноеМеню" id="46"/>
-																<ExtendedTooltip name="ЗаголовкиЗапросаУправлениеПоискомРасширеннаяПодсказка" id="47"/>
+																<ContextMenu name="ЗаголовкиЗапросаУправлениеПоискомКонтекстноеМеню" id="46" />
+																<ExtendedTooltip name="ЗаголовкиЗапросаУправлениеПоискомРасширеннаяПодсказка" id="47" />
 															</SearchControlAddition>
 															<Events>
 																<Event name="OnActivateRow">ЗаголовкиЗапросаПриАктивизацииСтроки</Event>
@@ -810,7 +810,7 @@
 																	<DropListButton>true</DropListButton>
 																	<ChoiceList>
 																		<xr:Item>
-																			<xr:Presentation/>
+																			<xr:Presentation />
 																			<xr:CheckState>0</xr:CheckState>
 																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																				<Presentation>
@@ -823,7 +823,7 @@
 																			</xr:Value>
 																		</xr:Item>
 																		<xr:Item>
-																			<xr:Presentation/>
+																			<xr:Presentation />
 																			<xr:CheckState>0</xr:CheckState>
 																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																				<Presentation>
@@ -836,7 +836,7 @@
 																			</xr:Value>
 																		</xr:Item>
 																		<xr:Item>
-																			<xr:Presentation/>
+																			<xr:Presentation />
 																			<xr:CheckState>0</xr:CheckState>
 																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																				<Presentation>
@@ -849,7 +849,7 @@
 																			</xr:Value>
 																		</xr:Item>
 																		<xr:Item>
-																			<xr:Presentation/>
+																			<xr:Presentation />
 																			<xr:CheckState>0</xr:CheckState>
 																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																				<Presentation>
@@ -862,7 +862,7 @@
 																			</xr:Value>
 																		</xr:Item>
 																		<xr:Item>
-																			<xr:Presentation/>
+																			<xr:Presentation />
 																			<xr:CheckState>0</xr:CheckState>
 																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																				<Presentation>
@@ -875,7 +875,7 @@
 																			</xr:Value>
 																		</xr:Item>
 																		<xr:Item>
-																			<xr:Presentation/>
+																			<xr:Presentation />
 																			<xr:CheckState>0</xr:CheckState>
 																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																				<Presentation>
@@ -888,7 +888,7 @@
 																			</xr:Value>
 																		</xr:Item>
 																		<xr:Item>
-																			<xr:Presentation/>
+																			<xr:Presentation />
 																			<xr:CheckState>0</xr:CheckState>
 																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																				<Presentation>
@@ -901,7 +901,7 @@
 																			</xr:Value>
 																		</xr:Item>
 																		<xr:Item>
-																			<xr:Presentation/>
+																			<xr:Presentation />
 																			<xr:CheckState>0</xr:CheckState>
 																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																				<Presentation>
@@ -914,8 +914,8 @@
 																			</xr:Value>
 																		</xr:Item>
 																	</ChoiceList>
-																	<ContextMenu name="ИмяЗаголовкаКонтекстноеМеню" id="49"/>
-																	<ExtendedTooltip name="ИмяЗаголовкаРасширеннаяПодсказка" id="50"/>
+																	<ContextMenu name="ИмяЗаголовкаКонтекстноеМеню" id="49" />
+																	<ExtendedTooltip name="ИмяЗаголовкаРасширеннаяПодсказка" id="50" />
 																	<Events>
 																		<Event name="OnChange">ИмяЗаголовкаПриИзменении</Event>
 																	</Events>
@@ -935,8 +935,8 @@
 																		</v8:item>
 																	</ToolTip>
 																	<DropListButton>true</DropListButton>
-																	<ContextMenu name="ЗначениеЗаголовкаКонтекстноеМеню" id="52"/>
-																	<ExtendedTooltip name="ЗначениеЗаголовкаРасширеннаяПодсказка" id="53"/>
+																	<ContextMenu name="ЗначениеЗаголовкаКонтекстноеМеню" id="52" />
+																	<ExtendedTooltip name="ЗначениеЗаголовкаРасширеннаяПодсказка" id="53" />
 																	<Events>
 																		<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 																		<Event name="StartChoice">ЗначениеЗаголовкаНачалоВыбора</Event>
@@ -955,45 +955,45 @@
 													<v8:content>Параметры</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="СтраницаПараметрыРасширеннаяПодсказка" id="481"/>
+											<ExtendedTooltip name="СтраницаПараметрыРасширеннаяПодсказка" id="481" />
 											<ChildItems>
 												<LabelField name="ОшибкаПараметровURL" id="485">
 													<DataPath>ОшибкаПараметровURL</DataPath>
 													<TitleLocation>None</TitleLocation>
-													<ContextMenu name="ОшибкаПараметровURLКонтекстноеМеню" id="486"/>
-													<ExtendedTooltip name="ОшибкаПараметровURLРасширеннаяПодсказка" id="487"/>
+													<ContextMenu name="ОшибкаПараметровURLКонтекстноеМеню" id="486" />
+													<ExtendedTooltip name="ОшибкаПараметровURLРасширеннаяПодсказка" id="487" />
 												</LabelField>
 												<Table name="ПараметрыURL" id="488">
 													<CommandBarLocation>Top</CommandBarLocation>
 													<DataPath>ПараметрыURL</DataPath>
 													<SearchStringLocation>CommandBar</SearchStringLocation>
-													<RowFilter xsi:nil="true"/>
-													<ContextMenu name="ПараметрыURLКонтекстноеМеню" id="489"/>
-													<AutoCommandBar name="ПараметрыURLКоманднаяПанель" id="490"/>
-													<ExtendedTooltip name="ПараметрыURLРасширеннаяПодсказка" id="503"/>
+													<RowFilter xsi:nil="true" />
+													<ContextMenu name="ПараметрыURLКонтекстноеМеню" id="489" />
+													<AutoCommandBar name="ПараметрыURLКоманднаяПанель" id="490" />
+													<ExtendedTooltip name="ПараметрыURLРасширеннаяПодсказка" id="503" />
 													<SearchStringAddition name="ПараметрыURLСтрокаПоиска" id="491">
 														<AdditionSource>
 															<Item>ПараметрыURL</Item>
 															<Type>SearchStringRepresentation</Type>
 														</AdditionSource>
-														<ContextMenu name="ПараметрыURLСтрокаПоискаКонтекстноеМеню" id="504"/>
-														<ExtendedTooltip name="ПараметрыURLСтрокаПоискаРасширеннаяПодсказка" id="505"/>
+														<ContextMenu name="ПараметрыURLСтрокаПоискаКонтекстноеМеню" id="504" />
+														<ExtendedTooltip name="ПараметрыURLСтрокаПоискаРасширеннаяПодсказка" id="505" />
 													</SearchStringAddition>
 													<ViewStatusAddition name="ПараметрыURLСостояниеПросмотра" id="492">
 														<AdditionSource>
 															<Item>ПараметрыURL</Item>
 															<Type>ViewStatusRepresentation</Type>
 														</AdditionSource>
-														<ContextMenu name="ПараметрыURLСостояниеПросмотраКонтекстноеМеню" id="506"/>
-														<ExtendedTooltip name="ПараметрыURLСостояниеПросмотраРасширеннаяПодсказка" id="507"/>
+														<ContextMenu name="ПараметрыURLСостояниеПросмотраКонтекстноеМеню" id="506" />
+														<ExtendedTooltip name="ПараметрыURLСостояниеПросмотраРасширеннаяПодсказка" id="507" />
 													</ViewStatusAddition>
 													<SearchControlAddition name="ПараметрыURLУправлениеПоиском" id="493">
 														<AdditionSource>
 															<Item>ПараметрыURL</Item>
 															<Type>SearchControl</Type>
 														</AdditionSource>
-														<ContextMenu name="ПараметрыURLУправлениеПоискомКонтекстноеМеню" id="508"/>
-														<ExtendedTooltip name="ПараметрыURLУправлениеПоискомРасширеннаяПодсказка" id="509"/>
+														<ContextMenu name="ПараметрыURLУправлениеПоискомКонтекстноеМеню" id="508" />
+														<ExtendedTooltip name="ПараметрыURLУправлениеПоискомРасширеннаяПодсказка" id="509" />
 													</SearchControlAddition>
 													<Events>
 														<Event name="OnStartEdit">ПараметрыURLПриНачалеРедактирования</Event>
@@ -1009,8 +1009,8 @@
 																</v8:item>
 															</Title>
 															<Width>30</Width>
-															<ContextMenu name="ИмяПараметраURLКонтекстноеМеню" id="495"/>
-															<ExtendedTooltip name="ИмяПараметраURLРасширеннаяПодсказка" id="496"/>
+															<ContextMenu name="ИмяПараметраURLКонтекстноеМеню" id="495" />
+															<ExtendedTooltip name="ИмяПараметраURLРасширеннаяПодсказка" id="496" />
 															<Events>
 																<Event name="OnChange">ПараметрыURLПриИзменении</Event>
 															</Events>
@@ -1025,8 +1025,8 @@
 															</Title>
 															<Width>60</Width>
 															<HorizontalStretch>true</HorizontalStretch>
-															<ContextMenu name="ЗначениеПараметраURLКонтекстноеМеню" id="498"/>
-															<ExtendedTooltip name="ЗначениеПараметраURLРасширеннаяПодсказка" id="499"/>
+															<ContextMenu name="ЗначениеПараметраURLКонтекстноеМеню" id="498" />
+															<ExtendedTooltip name="ЗначениеПараметраURLРасширеннаяПодсказка" id="499" />
 															<Events>
 																<Event name="OnChange">ПараметрыURLПриИзменении</Event>
 															</Events>
@@ -1040,8 +1040,8 @@
 																</v8:item>
 															</Title>
 															<CheckBoxType>Auto</CheckBoxType>
-															<ContextMenu name="ИспользуетсяПараметрURLКонтекстноеМеню" id="501"/>
-															<ExtendedTooltip name="ИспользуетсяПараметрURLРасширеннаяПодсказка" id="502"/>
+															<ContextMenu name="ИспользуетсяПараметрURLКонтекстноеМеню" id="501" />
+															<ExtendedTooltip name="ИспользуетсяПараметрURLРасширеннаяПодсказка" id="502" />
 															<Events>
 																<Event name="OnChange">ПараметрыURLПриИзменении</Event>
 															</Events>
@@ -1057,7 +1057,7 @@
 													<v8:content>Конструктор JSON</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="СтраницаКонструкторJSONРасширеннаяПодсказка" id="55"/>
+											<ExtendedTooltip name="СтраницаКонструкторJSONРасширеннаяПодсказка" id="55" />
 											<ChildItems>
 												<LabelDecoration name="ПодсказкаКонструкторJSON" id="56">
 													<AutoMaxWidth>false</AutoMaxWidth>
@@ -1071,13 +1071,13 @@
 													</Title>
 													<GroupVerticalAlign>Top</GroupVerticalAlign>
 													<VerticalAlign>Top</VerticalAlign>
-													<ContextMenu name="ПодсказкаКонструкторJSONКонтекстноеМеню" id="57"/>
-													<ExtendedTooltip name="ПодсказкаКонструкторJSONРасширеннаяПодсказка" id="58"/>
+													<ContextMenu name="ПодсказкаКонструкторJSONКонтекстноеМеню" id="57" />
+													<ExtendedTooltip name="ПодсказкаКонструкторJSONРасширеннаяПодсказка" id="58" />
 												</LabelDecoration>
 												<UsualGroup name="КомандыКонструктораJSON" id="81">
 													<Group>AlwaysHorizontal</Group>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="КомандыКонструктораJSONРасширеннаяПодсказка" id="82"/>
+													<ExtendedTooltip name="КомандыКонструктораJSONРасширеннаяПодсказка" id="82" />
 													<ChildItems>
 														<Button name="ДобавитьУзелJSON" id="83">
 															<Type>UsualButton</Type>
@@ -1093,7 +1093,7 @@
 																	<v8:content>Добавить вложенный</v8:content>
 																</v8:item>
 															</Title>
-															<ExtendedTooltip name="ДобавитьУзелJSONРасширеннаяПодсказка" id="84"/>
+															<ExtendedTooltip name="ДобавитьУзелJSONРасширеннаяПодсказка" id="84" />
 														</Button>
 														<Button name="УдалитьУзелJSON" id="85">
 															<Type>UsualButton</Type>
@@ -1109,7 +1109,7 @@
 																	<v8:content>Удалить узел</v8:content>
 																</v8:item>
 															</Title>
-															<ExtendedTooltip name="УдалитьУзелJSONРасширеннаяПодсказка" id="86"/>
+															<ExtendedTooltip name="УдалитьУзелJSONРасширеннаяПодсказка" id="86" />
 														</Button>
 														<Button name="СвернутьВсеJSON" id="87">
 															<Type>UsualButton</Type>
@@ -1126,7 +1126,7 @@
 																	<v8:content>Свернуть всё</v8:content>
 																</v8:item>
 															</Title>
-															<ExtendedTooltip name="СвернутьВсеJSONРасширеннаяПодсказка" id="88"/>
+															<ExtendedTooltip name="СвернутьВсеJSONРасширеннаяПодсказка" id="88" />
 														</Button>
 														<Button name="РазвернутьВсеJSON" id="89">
 															<Type>UsualButton</Type>
@@ -1143,7 +1143,7 @@
 																	<v8:content>Развернуть всё</v8:content>
 																</v8:item>
 															</Title>
-															<ExtendedTooltip name="РазвернутьВсеJSONРасширеннаяПодсказка" id="90"/>
+															<ExtendedTooltip name="РазвернутьВсеJSONРасширеннаяПодсказка" id="90" />
 														</Button>
 														<Button name="СформироватьJSON" id="91">
 															<Type>UsualButton</Type>
@@ -1159,7 +1159,7 @@
 																	<v8:content>Сформировать JSON</v8:content>
 																</v8:item>
 															</Title>
-															<ExtendedTooltip name="СформироватьJSONРасширеннаяПодсказка" id="92"/>
+															<ExtendedTooltip name="СформироватьJSONРасширеннаяПодсказка" id="92" />
 														</Button>
 														<InputField name="ПоискЗначенияJSON" id="252">
 															<DataPath>ПоискЗначенияJSON</DataPath>
@@ -1169,8 +1169,8 @@
 																	<v8:content>Поиск по значениям</v8:content>
 																</v8:item>
 															</Title>
-															<ContextMenu name="ПоискЗначенияJSONКонтекстноеМеню" id="253"/>
-															<ExtendedTooltip name="ПоискЗначенияJSONРасширеннаяПодсказка" id="254"/>
+															<ContextMenu name="ПоискЗначенияJSONКонтекстноеМеню" id="253" />
+															<ExtendedTooltip name="ПоискЗначенияJSONРасширеннаяПодсказка" id="254" />
 															<Events>
 																<Event name="OnChange">ПоискЗначенияJSONПриИзменении</Event>
 															</Events>
@@ -1190,7 +1190,7 @@
 																	<v8:content>Найти далее</v8:content>
 																</v8:item>
 															</Title>
-															<ExtendedTooltip name="НайтиДалееJSONРасширеннаяПодсказка" id="256"/>
+															<ExtendedTooltip name="НайтиДалееJSONРасширеннаяПодсказка" id="256" />
 														</Button>
 													</ChildItems>
 												</UsualGroup>
@@ -1205,34 +1205,34 @@
 															<v8:content>Структура JSON</v8:content>
 														</v8:item>
 													</Title>
-													<ContextMenu name="ДеревоJSONКонтекстноеМеню" id="60"/>
+													<ContextMenu name="ДеревоJSONКонтекстноеМеню" id="60" />
 													<AutoCommandBar name="ДеревоJSONКоманднаяПанель" id="61">
 														<Autofill>false</Autofill>
 													</AutoCommandBar>
-													<ExtendedTooltip name="ДеревоJSONРасширеннаяПодсказка" id="62"/>
+													<ExtendedTooltip name="ДеревоJSONРасширеннаяПодсказка" id="62" />
 													<SearchStringAddition name="ДеревоJSONСтрокаПоиска" id="63">
 														<AdditionSource>
 															<Item>ДеревоJSON</Item>
 															<Type>SearchStringRepresentation</Type>
 														</AdditionSource>
-														<ContextMenu name="ДеревоJSONСтрокаПоискаКонтекстноеМеню" id="64"/>
-														<ExtendedTooltip name="ДеревоJSONСтрокаПоискаРасширеннаяПодсказка" id="65"/>
+														<ContextMenu name="ДеревоJSONСтрокаПоискаКонтекстноеМеню" id="64" />
+														<ExtendedTooltip name="ДеревоJSONСтрокаПоискаРасширеннаяПодсказка" id="65" />
 													</SearchStringAddition>
 													<ViewStatusAddition name="ДеревоJSONСостояниеПросмотра" id="66">
 														<AdditionSource>
 															<Item>ДеревоJSON</Item>
 															<Type>ViewStatusRepresentation</Type>
 														</AdditionSource>
-														<ContextMenu name="ДеревоJSONСостояниеПросмотраКонтекстноеМеню" id="67"/>
-														<ExtendedTooltip name="ДеревоJSONСостояниеПросмотраРасширеннаяПодсказка" id="68"/>
+														<ContextMenu name="ДеревоJSONСостояниеПросмотраКонтекстноеМеню" id="67" />
+														<ExtendedTooltip name="ДеревоJSONСостояниеПросмотраРасширеннаяПодсказка" id="68" />
 													</ViewStatusAddition>
 													<SearchControlAddition name="ДеревоJSONУправлениеПоиском" id="69">
 														<AdditionSource>
 															<Item>ДеревоJSON</Item>
 															<Type>SearchControl</Type>
 														</AdditionSource>
-														<ContextMenu name="ДеревоJSONУправлениеПоискомКонтекстноеМеню" id="70"/>
-														<ExtendedTooltip name="ДеревоJSONУправлениеПоискомРасширеннаяПодсказка" id="71"/>
+														<ContextMenu name="ДеревоJSONУправлениеПоискомКонтекстноеМеню" id="70" />
+														<ExtendedTooltip name="ДеревоJSONУправлениеПоискомРасширеннаяПодсказка" id="71" />
 													</SearchControlAddition>
 													<Events>
 														<Event name="OnActivateRow">ДеревоJSONПриАктивизацииСтроки</Event>
@@ -1250,7 +1250,7 @@
 															<DropListButton>true</DropListButton>
 															<ChoiceList>
 																<xr:Item>
-																	<xr:Presentation/>
+																	<xr:Presentation />
 																	<xr:CheckState>0</xr:CheckState>
 																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																		<Presentation>
@@ -1263,7 +1263,7 @@
 																	</xr:Value>
 																</xr:Item>
 																<xr:Item>
-																	<xr:Presentation/>
+																	<xr:Presentation />
 																	<xr:CheckState>0</xr:CheckState>
 																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																		<Presentation>
@@ -1276,7 +1276,7 @@
 																	</xr:Value>
 																</xr:Item>
 																<xr:Item>
-																	<xr:Presentation/>
+																	<xr:Presentation />
 																	<xr:CheckState>0</xr:CheckState>
 																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																		<Presentation>
@@ -1289,7 +1289,7 @@
 																	</xr:Value>
 																</xr:Item>
 																<xr:Item>
-																	<xr:Presentation/>
+																	<xr:Presentation />
 																	<xr:CheckState>0</xr:CheckState>
 																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																		<Presentation>
@@ -1302,7 +1302,7 @@
 																	</xr:Value>
 																</xr:Item>
 																<xr:Item>
-																	<xr:Presentation/>
+																	<xr:Presentation />
 																	<xr:CheckState>0</xr:CheckState>
 																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																		<Presentation>
@@ -1315,7 +1315,7 @@
 																	</xr:Value>
 																</xr:Item>
 																<xr:Item>
-																	<xr:Presentation/>
+																	<xr:Presentation />
 																	<xr:CheckState>0</xr:CheckState>
 																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																		<Presentation>
@@ -1328,8 +1328,8 @@
 																	</xr:Value>
 																</xr:Item>
 															</ChoiceList>
-															<ContextMenu name="ТипУзлаJSONКонтекстноеМеню" id="73"/>
-															<ExtendedTooltip name="ТипУзлаJSONРасширеннаяПодсказка" id="74"/>
+															<ContextMenu name="ТипУзлаJSONКонтекстноеМеню" id="73" />
+															<ExtendedTooltip name="ТипУзлаJSONРасширеннаяПодсказка" id="74" />
 															<Events>
 																<Event name="OnChange">ТипУзлаJSONПриИзменении</Event>
 															</Events>
@@ -1342,8 +1342,8 @@
 																	<v8:content>Имя свойства</v8:content>
 																</v8:item>
 															</Title>
-															<ContextMenu name="ИмяУзлаJSONКонтекстноеМеню" id="76"/>
-															<ExtendedTooltip name="ИмяУзлаJSONРасширеннаяПодсказка" id="77"/>
+															<ContextMenu name="ИмяУзлаJSONКонтекстноеМеню" id="76" />
+															<ExtendedTooltip name="ИмяУзлаJSONРасширеннаяПодсказка" id="77" />
 															<Events>
 																<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 															</Events>
@@ -1357,8 +1357,8 @@
 																</v8:item>
 															</Title>
 															<DropListButton>true</DropListButton>
-															<ContextMenu name="ЗначениеУзлаJSONКонтекстноеМеню" id="79"/>
-															<ExtendedTooltip name="ЗначениеУзлаJSONРасширеннаяПодсказка" id="80"/>
+															<ContextMenu name="ЗначениеУзлаJSONКонтекстноеМеню" id="79" />
+															<ExtendedTooltip name="ЗначениеУзлаJSONРасширеннаяПодсказка" id="80" />
 															<Events>
 																<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 																<Event name="StartChoice">ЗначениеУзлаJSONНачалоВыбора</Event>
@@ -1378,9 +1378,9 @@
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<Height>1</Height>
 													<MultiLine>true</MultiLine>
-													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-													<ContextMenu name="ОшибкаКонструктораJSONКонтекстноеМеню" id="94"/>
-													<ExtendedTooltip name="ОшибкаКонструктораJSONРасширеннаяПодсказка" id="95"/>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100" />
+													<ContextMenu name="ОшибкаКонструктораJSONКонтекстноеМеню" id="94" />
+													<ExtendedTooltip name="ОшибкаКонструктораJSONРасширеннаяПодсказка" id="95" />
 												</InputField>
 											</ChildItems>
 										</Page>
@@ -1391,7 +1391,7 @@
 													<v8:content>Авторизация</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="СтраницаАвторизацияРасширеннаяПодсказка" id="97"/>
+											<ExtendedTooltip name="СтраницаАвторизацияРасширеннаяПодсказка" id="97" />
 											<ChildItems>
 												<InputField name="СпособАвторизации" id="98">
 													<DataPath>СпособАвторизации</DataPath>
@@ -1404,7 +1404,7 @@
 													<DropListButton>true</DropListButton>
 													<ChoiceList>
 														<xr:Item>
-															<xr:Presentation/>
+															<xr:Presentation />
 															<xr:CheckState>0</xr:CheckState>
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
@@ -1417,7 +1417,7 @@
 															</xr:Value>
 														</xr:Item>
 														<xr:Item>
-															<xr:Presentation/>
+															<xr:Presentation />
 															<xr:CheckState>0</xr:CheckState>
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
@@ -1430,7 +1430,7 @@
 															</xr:Value>
 														</xr:Item>
 														<xr:Item>
-															<xr:Presentation/>
+															<xr:Presentation />
 															<xr:CheckState>0</xr:CheckState>
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
@@ -1443,7 +1443,7 @@
 															</xr:Value>
 														</xr:Item>
 														<xr:Item>
-															<xr:Presentation/>
+															<xr:Presentation />
 															<xr:CheckState>0</xr:CheckState>
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
@@ -1456,7 +1456,7 @@
 															</xr:Value>
 														</xr:Item>
 														<xr:Item>
-															<xr:Presentation/>
+															<xr:Presentation />
 															<xr:CheckState>0</xr:CheckState>
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
@@ -1469,8 +1469,8 @@
 															</xr:Value>
 														</xr:Item>
 													</ChoiceList>
-													<ContextMenu name="СпособАвторизацииКонтекстноеМеню" id="99"/>
-													<ExtendedTooltip name="СпособАвторизацииРасширеннаяПодсказка" id="100"/>
+													<ContextMenu name="СпособАвторизацииКонтекстноеМеню" id="99" />
+													<ExtendedTooltip name="СпособАвторизацииРасширеннаяПодсказка" id="100" />
 													<Events>
 														<Event name="OnChange">СпособАвторизацииПриИзменении</Event>
 													</Events>
@@ -1484,7 +1484,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
-													<ExtendedTooltip name="ГруппаBasicРасширеннаяПодсказка" id="102"/>
+													<ExtendedTooltip name="ГруппаBasicРасширеннаяПодсказка" id="102" />
 													<ChildItems>
 														<InputField name="Логин" id="103">
 															<DataPath>Логин</DataPath>
@@ -1494,8 +1494,8 @@
 																	<v8:content>Логин</v8:content>
 																</v8:item>
 															</Title>
-															<ContextMenu name="ЛогинКонтекстноеМеню" id="104"/>
-															<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="105"/>
+															<ContextMenu name="ЛогинКонтекстноеМеню" id="104" />
+															<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="105" />
 															<Events>
 																<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 															</Events>
@@ -1509,8 +1509,8 @@
 																</v8:item>
 															</Title>
 															<PasswordMode>true</PasswordMode>
-															<ContextMenu name="ПарольКонтекстноеМеню" id="107"/>
-															<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="108"/>
+															<ContextMenu name="ПарольКонтекстноеМеню" id="107" />
+															<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="108" />
 															<Events>
 																<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 															</Events>
@@ -1526,7 +1526,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
-													<ExtendedTooltip name="ГруппаBearerРасширеннаяПодсказка" id="110"/>
+													<ExtendedTooltip name="ГруппаBearerРасширеннаяПодсказка" id="110" />
 													<ChildItems>
 														<InputField name="ТокенBearer" id="111">
 															<DataPath>ТокенBearer</DataPath>
@@ -1537,8 +1537,8 @@
 																</v8:item>
 															</Title>
 															<PasswordMode>true</PasswordMode>
-															<ContextMenu name="ТокенBearerКонтекстноеМеню" id="112"/>
-															<ExtendedTooltip name="ТокенBearerРасширеннаяПодсказка" id="113"/>
+															<ContextMenu name="ТокенBearerКонтекстноеМеню" id="112" />
+															<ExtendedTooltip name="ТокенBearerРасширеннаяПодсказка" id="113" />
 															<Events>
 																<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 															</Events>
@@ -1554,7 +1554,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
-													<ExtendedTooltip name="ГруппаAPIKeyРасширеннаяПодсказка" id="115"/>
+													<ExtendedTooltip name="ГруппаAPIKeyРасширеннаяПодсказка" id="115" />
 													<ChildItems>
 														<InputField name="ИмяКлюча" id="116">
 															<DataPath>ИмяКлюча</DataPath>
@@ -1564,8 +1564,8 @@
 																	<v8:content>Имя ключа</v8:content>
 																</v8:item>
 															</Title>
-															<ContextMenu name="ИмяКлючаКонтекстноеМеню" id="117"/>
-															<ExtendedTooltip name="ИмяКлючаРасширеннаяПодсказка" id="118"/>
+															<ContextMenu name="ИмяКлючаКонтекстноеМеню" id="117" />
+															<ExtendedTooltip name="ИмяКлючаРасширеннаяПодсказка" id="118" />
 															<Events>
 																<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 															</Events>
@@ -1579,8 +1579,8 @@
 																</v8:item>
 															</Title>
 															<PasswordMode>true</PasswordMode>
-															<ContextMenu name="ЗначениеКлючаКонтекстноеМеню" id="120"/>
-															<ExtendedTooltip name="ЗначениеКлючаРасширеннаяПодсказка" id="121"/>
+															<ContextMenu name="ЗначениеКлючаКонтекстноеМеню" id="120" />
+															<ExtendedTooltip name="ЗначениеКлючаРасширеннаяПодсказка" id="121" />
 															<Events>
 																<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 															</Events>
@@ -1596,7 +1596,7 @@
 															<DropListButton>true</DropListButton>
 															<ChoiceList>
 																<xr:Item>
-																	<xr:Presentation/>
+																	<xr:Presentation />
 																	<xr:CheckState>0</xr:CheckState>
 																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																		<Presentation>
@@ -1609,7 +1609,7 @@
 																	</xr:Value>
 																</xr:Item>
 																<xr:Item>
-																	<xr:Presentation/>
+																	<xr:Presentation />
 																	<xr:CheckState>0</xr:CheckState>
 																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																		<Presentation>
@@ -1622,8 +1622,8 @@
 																	</xr:Value>
 																</xr:Item>
 															</ChoiceList>
-															<ContextMenu name="РасположениеКлючаКонтекстноеМеню" id="123"/>
-															<ExtendedTooltip name="РасположениеКлючаРасширеннаяПодсказка" id="124"/>
+															<ContextMenu name="РасположениеКлючаКонтекстноеМеню" id="123" />
+															<ExtendedTooltip name="РасположениеКлючаРасширеннаяПодсказка" id="124" />
 															<Events>
 																<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 															</Events>
@@ -1639,7 +1639,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
-													<ExtendedTooltip name="ГруппаJWTРасширеннаяПодсказка" id="126"/>
+													<ExtendedTooltip name="ГруппаJWTРасширеннаяПодсказка" id="126" />
 													<ChildItems>
 														<InputField name="АдресТокена" id="127">
 															<DataPath>АдресТокена</DataPath>
@@ -1649,8 +1649,8 @@
 																	<v8:content>URL токена</v8:content>
 																</v8:item>
 															</Title>
-															<ContextMenu name="АдресТокенаКонтекстноеМеню" id="128"/>
-															<ExtendedTooltip name="АдресТокенаРасширеннаяПодсказка" id="129"/>
+															<ContextMenu name="АдресТокенаКонтекстноеМеню" id="128" />
+															<ExtendedTooltip name="АдресТокенаРасширеннаяПодсказка" id="129" />
 															<Events>
 																<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 															</Events>
@@ -1663,8 +1663,8 @@
 																	<v8:content>Метод</v8:content>
 																</v8:item>
 															</Title>
-															<ContextMenu name="МетодТокенаКонтекстноеМеню" id="131"/>
-															<ExtendedTooltip name="МетодТокенаРасширеннаяПодсказка" id="132"/>
+															<ContextMenu name="МетодТокенаКонтекстноеМеню" id="131" />
+															<ExtendedTooltip name="МетодТокенаРасширеннаяПодсказка" id="132" />
 															<Events>
 																<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 															</Events>
@@ -1683,7 +1683,7 @@
 																	<v8:content>Получить JWT</v8:content>
 																</v8:item>
 															</Title>
-															<ExtendedTooltip name="ПолучитьТокенРасширеннаяПодсказка" id="134"/>
+															<ExtendedTooltip name="ПолучитьТокенРасширеннаяПодсказка" id="134" />
 														</Button>
 														<UsualGroup name="ГруппаЗаголовкиТокена" id="135">
 															<Title>
@@ -1695,7 +1695,7 @@
 															<Group>Vertical</Group>
 															<Behavior>Collapsible</Behavior>
 															<Collapsed>true</Collapsed>
-															<ExtendedTooltip name="ГруппаЗаголовкиТокенаРасширеннаяПодсказка" id="136"/>
+															<ExtendedTooltip name="ГруппаЗаголовкиТокенаРасширеннаяПодсказка" id="136" />
 															<ChildItems>
 																<Table name="ЗаголовкиТокена" id="137">
 																	<Height>4</Height>
@@ -1706,33 +1706,33 @@
 																			<v8:content>Имя и значение заголовка</v8:content>
 																		</v8:item>
 																	</Title>
-																	<RowFilter xsi:nil="true"/>
-																	<ContextMenu name="ЗаголовкиТокенаКонтекстноеМеню" id="138"/>
-																	<AutoCommandBar name="ЗаголовкиТокенаКоманднаяПанель" id="139"/>
-																	<ExtendedTooltip name="ЗаголовкиТокенаРасширеннаяПодсказка" id="140"/>
+																	<RowFilter xsi:nil="true" />
+																	<ContextMenu name="ЗаголовкиТокенаКонтекстноеМеню" id="138" />
+																	<AutoCommandBar name="ЗаголовкиТокенаКоманднаяПанель" id="139" />
+																	<ExtendedTooltip name="ЗаголовкиТокенаРасширеннаяПодсказка" id="140" />
 																	<SearchStringAddition name="ЗаголовкиТокенаСтрокаПоиска" id="141">
 																		<AdditionSource>
 																			<Item>ЗаголовкиТокена</Item>
 																			<Type>SearchStringRepresentation</Type>
 																		</AdditionSource>
-																		<ContextMenu name="ЗаголовкиТокенаСтрокаПоискаКонтекстноеМеню" id="142"/>
-																		<ExtendedTooltip name="ЗаголовкиТокенаСтрокаПоискаРасширеннаяПодсказка" id="143"/>
+																		<ContextMenu name="ЗаголовкиТокенаСтрокаПоискаКонтекстноеМеню" id="142" />
+																		<ExtendedTooltip name="ЗаголовкиТокенаСтрокаПоискаРасширеннаяПодсказка" id="143" />
 																	</SearchStringAddition>
 																	<ViewStatusAddition name="ЗаголовкиТокенаСостояниеПросмотра" id="144">
 																		<AdditionSource>
 																			<Item>ЗаголовкиТокена</Item>
 																			<Type>ViewStatusRepresentation</Type>
 																		</AdditionSource>
-																		<ContextMenu name="ЗаголовкиТокенаСостояниеПросмотраКонтекстноеМеню" id="145"/>
-																		<ExtendedTooltip name="ЗаголовкиТокенаСостояниеПросмотраРасширеннаяПодсказка" id="146"/>
+																		<ContextMenu name="ЗаголовкиТокенаСостояниеПросмотраКонтекстноеМеню" id="145" />
+																		<ExtendedTooltip name="ЗаголовкиТокенаСостояниеПросмотраРасширеннаяПодсказка" id="146" />
 																	</ViewStatusAddition>
 																	<SearchControlAddition name="ЗаголовкиТокенаУправлениеПоиском" id="147">
 																		<AdditionSource>
 																			<Item>ЗаголовкиТокена</Item>
 																			<Type>SearchControl</Type>
 																		</AdditionSource>
-																		<ContextMenu name="ЗаголовкиТокенаУправлениеПоискомКонтекстноеМеню" id="148"/>
-																		<ExtendedTooltip name="ЗаголовкиТокенаУправлениеПоискомРасширеннаяПодсказка" id="149"/>
+																		<ContextMenu name="ЗаголовкиТокенаУправлениеПоискомКонтекстноеМеню" id="148" />
+																		<ExtendedTooltip name="ЗаголовкиТокенаУправлениеПоискомРасширеннаяПодсказка" id="149" />
 																	</SearchControlAddition>
 																	<Events>
 																		<Event name="OnActivateRow">ЗаголовкиТокенаПриАктивизацииСтроки</Event>
@@ -1750,7 +1750,7 @@
 																			<DropListButton>true</DropListButton>
 																			<ChoiceList>
 																				<xr:Item>
-																					<xr:Presentation/>
+																					<xr:Presentation />
 																					<xr:CheckState>0</xr:CheckState>
 																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																						<Presentation>
@@ -1763,7 +1763,7 @@
 																					</xr:Value>
 																				</xr:Item>
 																				<xr:Item>
-																					<xr:Presentation/>
+																					<xr:Presentation />
 																					<xr:CheckState>0</xr:CheckState>
 																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																						<Presentation>
@@ -1776,7 +1776,7 @@
 																					</xr:Value>
 																				</xr:Item>
 																				<xr:Item>
-																					<xr:Presentation/>
+																					<xr:Presentation />
 																					<xr:CheckState>0</xr:CheckState>
 																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																						<Presentation>
@@ -1789,7 +1789,7 @@
 																					</xr:Value>
 																				</xr:Item>
 																				<xr:Item>
-																					<xr:Presentation/>
+																					<xr:Presentation />
 																					<xr:CheckState>0</xr:CheckState>
 																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																						<Presentation>
@@ -1802,7 +1802,7 @@
 																					</xr:Value>
 																				</xr:Item>
 																				<xr:Item>
-																					<xr:Presentation/>
+																					<xr:Presentation />
 																					<xr:CheckState>0</xr:CheckState>
 																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																						<Presentation>
@@ -1815,7 +1815,7 @@
 																					</xr:Value>
 																				</xr:Item>
 																				<xr:Item>
-																					<xr:Presentation/>
+																					<xr:Presentation />
 																					<xr:CheckState>0</xr:CheckState>
 																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																						<Presentation>
@@ -1828,7 +1828,7 @@
 																					</xr:Value>
 																				</xr:Item>
 																				<xr:Item>
-																					<xr:Presentation/>
+																					<xr:Presentation />
 																					<xr:CheckState>0</xr:CheckState>
 																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																						<Presentation>
@@ -1841,7 +1841,7 @@
 																					</xr:Value>
 																				</xr:Item>
 																				<xr:Item>
-																					<xr:Presentation/>
+																					<xr:Presentation />
 																					<xr:CheckState>0</xr:CheckState>
 																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																						<Presentation>
@@ -1854,8 +1854,8 @@
 																					</xr:Value>
 																				</xr:Item>
 																			</ChoiceList>
-																			<ContextMenu name="ИмяЗаголовкаТокенаКонтекстноеМеню" id="151"/>
-																			<ExtendedTooltip name="ИмяЗаголовкаТокенаРасширеннаяПодсказка" id="152"/>
+																			<ContextMenu name="ИмяЗаголовкаТокенаКонтекстноеМеню" id="151" />
+																			<ExtendedTooltip name="ИмяЗаголовкаТокенаРасширеннаяПодсказка" id="152" />
 																			<Events>
 																				<Event name="OnChange">ИмяЗаголовкаТокенаПриИзменении</Event>
 																			</Events>
@@ -1875,8 +1875,8 @@
 																				</v8:item>
 																			</ToolTip>
 																			<DropListButton>true</DropListButton>
-																			<ContextMenu name="ЗначениеЗаголовкаТокенаКонтекстноеМеню" id="154"/>
-																			<ExtendedTooltip name="ЗначениеЗаголовкаТокенаРасширеннаяПодсказка" id="155"/>
+																			<ContextMenu name="ЗначениеЗаголовкаТокенаКонтекстноеМеню" id="154" />
+																			<ExtendedTooltip name="ЗначениеЗаголовкаТокенаРасширеннаяПодсказка" id="155" />
 																			<Events>
 																				<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 																				<Event name="StartChoice">ЗначениеЗаголовкаТокенаНачалоВыбора</Event>
@@ -1897,8 +1897,8 @@
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<Height>5</Height>
 															<MultiLine>true</MultiLine>
-															<ContextMenu name="ТелоТокенаКонтекстноеМеню" id="157"/>
-															<ExtendedTooltip name="ТелоТокенаРасширеннаяПодсказка" id="158"/>
+															<ContextMenu name="ТелоТокенаКонтекстноеМеню" id="157" />
+															<ExtendedTooltip name="ТелоТокенаРасширеннаяПодсказка" id="158" />
 															<Events>
 																<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 															</Events>
@@ -1911,8 +1911,8 @@
 																	<v8:content>Путь к токену</v8:content>
 																</v8:item>
 															</Title>
-															<ContextMenu name="ПутьТокенаКонтекстноеМеню" id="160"/>
-															<ExtendedTooltip name="ПутьТокенаРасширеннаяПодсказка" id="161"/>
+															<ContextMenu name="ПутьТокенаКонтекстноеМеню" id="160" />
+															<ExtendedTooltip name="ПутьТокенаРасширеннаяПодсказка" id="161" />
 															<Events>
 																<Event name="OnChange">ПараметрЗапросаПриИзменении</Event>
 															</Events>
@@ -1926,8 +1926,8 @@
 																	<v8:content>Состояние</v8:content>
 																</v8:item>
 															</Title>
-															<ContextMenu name="СостояниеТокенаКонтекстноеМеню" id="163"/>
-															<ExtendedTooltip name="СостояниеТокенаРасширеннаяПодсказка" id="164"/>
+															<ContextMenu name="СостояниеТокенаКонтекстноеМеню" id="163" />
+															<ExtendedTooltip name="СостояниеТокенаРасширеннаяПодсказка" id="164" />
 														</InputField>
 														<InputField name="ПолеПолученныйJWT" id="165">
 															<DataPath>ТокенJWT</DataPath>
@@ -1941,8 +1941,8 @@
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<Height>2</Height>
 															<MultiLine>true</MultiLine>
-															<ContextMenu name="ПолеПолученныйJWTКонтекстноеМеню" id="166"/>
-															<ExtendedTooltip name="ПолеПолученныйJWTРасширеннаяПодсказка" id="167"/>
+															<ContextMenu name="ПолеПолученныйJWTКонтекстноеМеню" id="166" />
+															<ExtendedTooltip name="ПолеПолученныйJWTРасширеннаяПодсказка" id="167" />
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -1956,23 +1956,49 @@
 												</v8:item>
 											</Title>
 											<ChildrenAlign>None</ChildrenAlign>
-											<ExtendedTooltip name="СтраницаОтветРасширеннаяПодсказка" id="169"/>
+											<ExtendedTooltip name="СтраницаОтветРасширеннаяПодсказка" id="169" />
 											<ChildItems>
-												<InputField name="ИтоговыйАдрес" id="170">
-													<DataPath>ИтоговыйАдрес</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Итоговый URL запроса</v8:content>
-														</v8:item>
-													</Title>
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<MaxWidth>60</MaxWidth>
-													<HorizontalStretch>true</HorizontalStretch>
-													<ContextMenu name="ИтоговыйАдресКонтекстноеМеню" id="171"/>
-													<ExtendedTooltip name="ИтоговыйАдресРасширеннаяПодсказка" id="172"/>
-												</InputField>
+												<UsualGroup name="СтрокаИтоговогоURL" id="517">
+													<Group>AlwaysHorizontal</Group>
+													<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="СтрокаИтоговогоURLРасширеннаяПодсказка" id="518" />
+													<ChildItems>
+														<InputField name="ИтоговыйАдрес" id="170">
+															<DataPath>ИтоговыйАдрес</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Итоговый URL запроса</v8:content>
+																</v8:item>
+															</Title>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>60</MaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ИтоговыйАдресКонтекстноеМеню" id="171" />
+															<ExtendedTooltip name="ИтоговыйАдресРасширеннаяПодсказка" id="172" />
+														</InputField>
+														<Button name="СкачатьФайлОтвета" id="515">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.СкачатьФайлОтвета</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Скачать файл</v8:content>
+																</v8:item>
+															</Title>
+															<Visible>false</Visible>
+															<Picture>
+																<xr:Abs>Picture.png</xr:Abs>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<Representation>PictureAndText</Representation>
+															<ExtendedTooltip name="СкачатьФайлОтветаРасширеннаяПодсказка" id="516" />
+														</Button>
+													</ChildItems>
+												</UsualGroup>
 												<UsualGroup name="ГруппаИтоговыеЗаголовкиЗапроса" id="173">
 													<Title>
 														<v8:item>
@@ -1983,7 +2009,7 @@
 													<Group>Vertical</Group>
 													<Behavior>Collapsible</Behavior>
 													<Collapsed>true</Collapsed>
-													<ExtendedTooltip name="ГруппаИтоговыеЗаголовкиЗапросаРасширеннаяПодсказка" id="174"/>
+													<ExtendedTooltip name="ГруппаИтоговыеЗаголовкиЗапросаРасширеннаяПодсказка" id="174" />
 													<ChildItems>
 														<InputField name="ИтоговыеЗаголовкиЗапроса" id="175">
 															<DataPath>ИтоговыеЗаголовкиЗапроса</DataPath>
@@ -1997,8 +2023,8 @@
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<Height>3</Height>
 															<MultiLine>true</MultiLine>
-															<ContextMenu name="ИтоговыеЗаголовкиЗапросаКонтекстноеМеню" id="176"/>
-															<ExtendedTooltip name="ИтоговыеЗаголовкиЗапросаРасширеннаяПодсказка" id="177"/>
+															<ContextMenu name="ИтоговыеЗаголовкиЗапросаКонтекстноеМеню" id="176" />
+															<ExtendedTooltip name="ИтоговыеЗаголовкиЗапросаРасширеннаяПодсказка" id="177" />
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -2017,7 +2043,7 @@
 													</ToolTip>
 													<Behavior>Collapsible</Behavior>
 													<Collapsed>true</Collapsed>
-													<ExtendedTooltip name="ГруппаИтоговоеТелоЗапросаРасширеннаяПодсказка" id="465"/>
+													<ExtendedTooltip name="ГруппаИтоговоеТелоЗапросаРасширеннаяПодсказка" id="465" />
 													<ChildItems>
 														<InputField name="ОтправленноеТело" id="178">
 															<DataPath>ОтправленноеТело</DataPath>
@@ -2031,8 +2057,8 @@
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<Height>6</Height>
 															<MultiLine>true</MultiLine>
-															<ContextMenu name="ОтправленноеТелоКонтекстноеМеню" id="179"/>
-															<ExtendedTooltip name="ОтправленноеТелоРасширеннаяПодсказка" id="180"/>
+															<ContextMenu name="ОтправленноеТелоКонтекстноеМеню" id="179" />
+															<ExtendedTooltip name="ОтправленноеТелоРасширеннаяПодсказка" id="180" />
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -2042,7 +2068,7 @@
 													<VerticalAlign>Bottom</VerticalAlign>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="СтрокаКодаИВремениРасширеннаяПодсказка" id="411"/>
+													<ExtendedTooltip name="СтрокаКодаИВремениРасширеннаяПодсказка" id="411" />
 													<ChildItems>
 														<InputField name="КодОтвета" id="181">
 															<DataPath>КодОтвета</DataPath>
@@ -2054,16 +2080,16 @@
 																</v8:item>
 															</Title>
 															<TitleLocation>Left</TitleLocation>
-															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-															<ContextMenu name="КодОтветаКонтекстноеМеню" id="182"/>
-															<ExtendedTooltip name="КодОтветаРасширеннаяПодсказка" id="183"/>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100" />
+															<ContextMenu name="КодОтветаКонтекстноеМеню" id="182" />
+															<ExtendedTooltip name="КодОтветаРасширеннаяПодсказка" id="183" />
 														</InputField>
 														<LabelField name="ВремяЗапросаДляПоказа" id="412">
 															<DataPath>ВремяЗапросаДляПоказа</DataPath>
 															<TitleLocation>None</TitleLocation>
-															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-															<ContextMenu name="ВремяЗапросаДляПоказаКонтекстноеМеню" id="413"/>
-															<ExtendedTooltip name="ВремяЗапросаДляПоказаРасширеннаяПодсказка" id="414"/>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100" />
+															<ContextMenu name="ВремяЗапросаДляПоказаКонтекстноеМеню" id="413" />
+															<ExtendedTooltip name="ВремяЗапросаДляПоказаРасширеннаяПодсказка" id="414" />
 														</LabelField>
 													</ChildItems>
 												</UsualGroup>
@@ -2077,7 +2103,7 @@
 													<Group>Vertical</Group>
 													<Behavior>Collapsible</Behavior>
 													<Collapsed>true</Collapsed>
-													<ExtendedTooltip name="ГруппаЗаголовкиОтветаРасширеннаяПодсказка" id="185"/>
+													<ExtendedTooltip name="ГруппаЗаголовкиОтветаРасширеннаяПодсказка" id="185" />
 													<ChildItems>
 														<InputField name="ЗаголовкиОтвета" id="186">
 															<DataPath>ЗаголовкиОтвета</DataPath>
@@ -2091,8 +2117,8 @@
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<Height>3</Height>
 															<MultiLine>true</MultiLine>
-															<ContextMenu name="ЗаголовкиОтветаКонтекстноеМеню" id="187"/>
-															<ExtendedTooltip name="ЗаголовкиОтветаРасширеннаяПодсказка" id="188"/>
+															<ContextMenu name="ЗаголовкиОтветаКонтекстноеМеню" id="187" />
+															<ExtendedTooltip name="ЗаголовкиОтветаРасширеннаяПодсказка" id="188" />
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -2108,8 +2134,8 @@
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<Height>7</Height>
 													<MultiLine>true</MultiLine>
-													<ContextMenu name="ТелоОтветаКонтекстноеМеню" id="190"/>
-													<ExtendedTooltip name="ТелоОтветаРасширеннаяПодсказка" id="191"/>
+													<ContextMenu name="ТелоОтветаКонтекстноеМеню" id="190" />
+													<ExtendedTooltip name="ТелоОтветаРасширеннаяПодсказка" id="191" />
 												</InputField>
 												<InputField name="ОшибкаЗапроса" id="192">
 													<DataPath>ОшибкаЗапроса</DataPath>
@@ -2123,9 +2149,9 @@
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<Height>1</Height>
 													<MultiLine>true</MultiLine>
-													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-													<ContextMenu name="ОшибкаЗапросаКонтекстноеМеню" id="193"/>
-													<ExtendedTooltip name="ОшибкаЗапросаРасширеннаяПодсказка" id="194"/>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100" />
+													<ContextMenu name="ОшибкаЗапросаКонтекстноеМеню" id="193" />
+													<ExtendedTooltip name="ОшибкаЗапросаРасширеннаяПодсказка" id="194" />
 												</InputField>
 											</ChildItems>
 										</Page>
@@ -2136,7 +2162,7 @@
 													<v8:content>Справка</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="СтраницаСправкаРасширеннаяПодсказка" id="196"/>
+											<ExtendedTooltip name="СтраницаСправкаРасширеннаяПодсказка" id="196" />
 											<ChildItems>
 												<HTMLDocumentField name="HTMLСправка" id="197">
 													<DataPath>ТекстСправки</DataPath>
@@ -2145,8 +2171,8 @@
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<Height>11</Height>
 													<AutoMaxHeight>false</AutoMaxHeight>
-													<ContextMenu name="HTMLСправкаКонтекстноеМеню" id="198"/>
-													<ExtendedTooltip name="HTMLСправкаРасширеннаяПодсказка" id="199"/>
+													<ContextMenu name="HTMLСправкаКонтекстноеМеню" id="198" />
+													<ExtendedTooltip name="HTMLСправкаРасширеннаяПодсказка" id="199" />
 												</HTMLDocumentField>
 											</ChildItems>
 										</Page>
@@ -2158,7 +2184,7 @@
 													<v8:content>Doom</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="СтраницаDoomРасширеннаяПодсказка" id="267"/>
+											<ExtendedTooltip name="СтраницаDoomРасширеннаяПодсказка" id="267" />
 											<ChildItems>
 												<HTMLDocumentField name="HTMLDoom" id="268">
 													<DataPath>ТекстDoom</DataPath>
@@ -2166,8 +2192,8 @@
 													<TitleLocation>None</TitleLocation>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<AutoMaxHeight>false</AutoMaxHeight>
-													<ContextMenu name="HTMLDoomКонтекстноеМеню" id="269"/>
-													<ExtendedTooltip name="HTMLDoomРасширеннаяПодсказка" id="270"/>
+													<ContextMenu name="HTMLDoomКонтекстноеМеню" id="269" />
+													<ExtendedTooltip name="HTMLDoomРасширеннаяПодсказка" id="270" />
 												</HTMLDocumentField>
 											</ChildItems>
 										</Page>
@@ -3129,6 +3155,15 @@
 				</v8:item>
 			</Title>
 			<Action>КопироватьЗапросWorkSpaceОбработка</Action>
+		</Command>
+		<Command name="СкачатьФайлОтвета" id="464">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скачать файл</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СкачатьФайлОтветаОбработка</Action>
 		</Command>
 	</Commands>
 </Form>

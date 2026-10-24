@@ -1016,13 +1016,32 @@
                       "title": "Результат",
                       "children": [
                         {
-                          "input": "ИтоговыйАдрес",
-                          "path": "ИтоговыйАдрес",
-                          "title": "Итоговый URL запроса",
-                          "readOnly": true,
-                          "horizontalStretch": true,
-                          "autoMaxWidth": false,
-                          "maxWidth": 60
+                          "group": "alwaysHorizontal",
+                          "name": "СтрокаИтоговогоURL",
+                          "representation": "None",
+                          "showTitle": false,
+                          "groupVerticalAlign": "Bottom",
+                          "children": [
+                            {
+                              "input": "ИтоговыйАдрес",
+                              "path": "ИтоговыйАдрес",
+                              "title": "Итоговый URL запроса",
+                              "readOnly": true,
+                              "horizontalStretch": true,
+                              "autoMaxWidth": false,
+                              "maxWidth": 60
+                            },
+                            {
+                              "button": "СкачатьФайлОтвета",
+                              "command": "СкачатьФайлОтвета",
+                              "title": "Скачать файл",
+                              "type": "usual",
+                              "picture": "abs:Picture.png",
+                              "loadTransparent": true,
+                              "representation": "PictureAndText",
+                              "visible": false
+                            }
+                          ]
                         },
                         {
                           "group": "collapsible",
@@ -1558,6 +1577,11 @@
       "name": "ИмпортироватьPostman",
       "title": "Импортировать из POSTman",
       "action": "ИмпортироватьPostmanОбработка"
+    },
+    {
+      "name": "СкачатьФайлОтвета",
+      "title": "Скачать файл",
+      "action": "СкачатьФайлОтветаОбработка"
     }
   ]
 }
