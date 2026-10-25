@@ -26,6 +26,7 @@
 		<ChildObjects>
 			<Form>Форма</Form>
 			<Form>ИмпортCURL</Form>
+			<Form>ПросмотрCURL</Form>
 			<Template>DoomHTML</Template>
 			<Template>РедакторЗапросаHTML</Template>
 		</ChildObjects>

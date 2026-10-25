@@ -1,0 +1,12 @@
+{
+  "title": "cURL текущего запроса",
+  "properties": {"autoTitle": false, "width": 110, "height": 25, "commandBarLocation": "None", "saveDataInSettings": "DontUse"},
+  "events": {"OnCreateAtServer": "ПриСозданииНаСервере"},
+  "elements": [
+    {"label": "ФорматКоманды", "title": "Формат POSIX/Bash. Команда может содержать пароли, ключи и токены"},
+    {"input": "КомандаCURL", "path": "КомандаCURL", "titleLocation": "none", "multiLine": true, "readOnly": true, "width": 110, "height": 22, "autoMaxWidth": false, "horizontalStretch": true, "verticalStretch": true},
+    {"button": "Закрыть", "stdCommand": "Close", "title": "Закрыть", "picture": "StdPicture.Close", "representation": "PictureAndText", "type": "usual"}
+  ],
+  "attributes": [{"name": "КомандаCURL", "type": "string"}],
+  "parameters": [{"name": "КомандаCURL", "type": "string"}]
+}
